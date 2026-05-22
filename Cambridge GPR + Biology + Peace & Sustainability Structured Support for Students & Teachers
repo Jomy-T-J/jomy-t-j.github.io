@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TJ – Cambridge GPR, Biology & Sustainability Specialist</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 2rem auto;
+      max-width: 700px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #1a4e8c;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .cta {
+      background-color: #f0f5ff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      border: 1px solid #d0e0ff;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TJ – Cambridge Global Perspectives & Biology Specialist</h1>
+
+  <p>
+    Cambridge IGCSE & AS/A Level Global Perspectives & Research Specialist, Biology & Biotechnology Mentor, and Peace & Sustainability Advocate, offering structured, exam‑focused support to students and teachers.
+  </p>
+
+  <!-- 1. GPR Section -->
+  <h2>Cambridge Global Perspectives (0457 & 9239)</h2>
+  <p>Exam‑focused support for IGCSE 0457 and AS/A Level 9239 students aiming for better results.</p>
+  <ul>
+    <li>IGCSE 0457 tutoring – all components: case study, research, evaluation, and reflection</li>
+    <li>AS/A Level 9239 Global Perspectives & Research skill‑coaching</li>
+    <li>Mini‑modules: critical reading, case study analysis, research planning, evaluation, and impact‑evidence‑action planning</li>
+    <li>Small‑group or 1:1 coaching for exam‑style answers and time‑management</li>
+  </ul>
+
+  <!-- 2. Biology & Biotech Section -->
+  <h2>Biology & Biotechnology Support</h2>
+  <p>Concept‑clear, exam‑ready notes for teachers and advanced students.</p>
+  <ul>
+    <li>PGT Biology notes (Cambridge‑aligned, topic‑wise)</li>
+    <li>Biotechnology basics concept notes</li>
+    <li>PCR technology notes – step‑by‑step diagrams, applications, and exam‑style explanations</li>
+    <li>Support for teachers integrating practical concepts into classroom teaching</li>
+  </ul>
+
+  <!-- 3. Peace & Sustainability Section -->
+  <h2>Peace & Sustainability Project Labs</h2>
+  <p>Project‑based learning and lectures for schools, teachers, and students.</p>
+  <ul>
+    <li>Peace and sustainability lectures (for assemblies, clubs, or elective modules)</li>
+    <li>GPR‑style project workshops: designing case studies, action plans, and impact analysis</li>
+    <li>Class‑level or student‑team projects aligned with SDGs and local issues</li>
+    <li>Support for teachers to turn projects into school portfolios or exhibitions</li>
+  </ul>
+
+  <!-- 4. Free + Paid path -->
+  <h2>How to get started</h2>
+  <p>
+    Start with a <strong>free sample</strong> or a short 10‑minute consult call. Then choose paid resources or classes that fit your needs.
+  </p>
+  <ul>
+    <li><strong>Free</strong>: One sample note page from IGCSE 0457, Biology/PCR, or Peace‑Sustainability, delivered via WhatsApp or email.</li>
+    <li><strong>Paid</strong>:
+      <ul>
+        <li>Full note packs (GPR, Biology, Biotech, or Peace‑Sustainability topics)</li>
+        <li>Recorded mini‑classes or short‑course modules</li>
+        <li>Small‑group or 1:1 coaching for students or teacher training sessions</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- 5. Contact CTA -->
+  <div class="cta">
+    <h3>Get your free sample and choose your support</h3>
+    <p>
+      WhatsApp: <a href="https://wa.me/919629427522" target="_blank">WhatsApp: +91 9629427522</a>
+      Email: <strong>starjomy@gmail.com</strong><br>
+      Website: <strong>jomy-t-j.github.io</strong>
+    </p>
+    <p>
+      Mention your level (IGCSE / AS / A Level / teacher) and which area you want: Global Perspectives, Biology/Biotech, or Peace & Sustainability.
+    </p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 TJ – Cambridge GPR, Biology & Sustainability Specialist. All materials are for personal, non‑commercial use unless otherwise agreed.</p>
+  </div>
+
+</body>
+</html>
