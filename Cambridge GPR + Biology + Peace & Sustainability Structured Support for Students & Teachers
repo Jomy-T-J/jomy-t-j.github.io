@@ -2,188 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TJ – Cambridge Global Perspectives & Biology Specialist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Perspectives & Science Guidance</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem auto;
-      max-width: 760px;
+      font-family: system-ui, -apple-system, sans-serif;
       line-height: 1.6;
-      color: #333;
+      color: #111;
+      background: #f4f6f9;
     }
-    h1, h2, h3 {
-      color: #1a4e8c;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    ul li {
-      margin-bottom: 0.3rem;
-    }
-    .cta {
-      background-color: #f0f5ff;
-      padding: 1rem;
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       border-radius: 8px;
-      margin-top: 2rem;
-      border: 1px solid #d0e0ff;
     }
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
+
+    h1 {
+      text-align: center;
+      color: #0066cc;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #0066cc;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .intro {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f0f8ff;
+      border-radius: 6px;
+    }
+
+    .samples {
+      background: #f9f9f9;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+    }
+
+    .samples ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .samples li {
+      margin: 0.75rem 0;
+    }
+
+    .samples a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .samples a:hover {
+      text-decoration: underline;
+    }
+
+    .samples p {
+      margin-top: 1rem;
+      font-size: 0.925rem;
+      color: #555;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: #e6f2ff;
+      border-radius: 8px;
+    }
+
+    .cta h3 {
+      color: #0066cc;
+      margin-bottom: 0.75rem;
+    }
+
+    .cta p {
+      margin: 0.5rem 0;
+    }
+
+    .cta a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .cta a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.875rem;
       color: #666;
     }
-    a {
-      color: #1a4e8c;
-    }
-  </style>.samples {
-  background: #f9f9f9;
-  padding: 2rem;
-  margin: 2rem 0;
-  border-radius: 8px;
-}
-
-.samples h2 {
-  color: #0066cc;
-  margin-bottom: 1rem;
-}
-
-.samples ul {
-  list-style: none;
-  padding: 0;
-}
-
-.samples li {
-  margin: 0.75rem 0;
-}
-
-.samples a {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.samples a:hover {
-  text-decoration: underline;
-}
-
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Global Perspectives & Science Guidance</h1>
 
-  <h1>TJ – Cambridge Global Perspectives & Biology Specialist</h1>
+    <div class="intro">
+      <p>
+        Welcome! This page offers free sample guidelines for Cambridge Global Perspectives (0457, 9239) and related support for students, teachers, and parents.
+      </p>
+    </div>
 
-  <p>
-    As a Cambridge IGCSE & AS/A Level Global Perspectives & Research Specialist, with a biotechnology background and active engagement in peace and sustainability advocacy, I now support students and teachers by:
-  </p>
-  <ul>
-    <li>Offering exam‑focused tutoring for IGCSE 0457 (all components) and AS/A Level 9239 (all components)</li>
-    <li>Creating clear, exam‑ready concept notes in Biology and basics of biotechnology</li>
-    <li>Guiding peace and sustainability projects and classroom‑ready lecture ideas for schools and teachers</li>
-  </ul>
+    <!-- Sample guidelines section -->
+    <section class="samples">
+      <h2>📘 Free Sample Guidelines</h2>
+      <p>Component‑wise breakdowns and exam‑structure guides for Cambridge Global Perspectives (0457 / 9239):</p>
 
-  <!-- IGCSE 0457 Section -->
-  <h2>Cambridge IGCSE Global Perspectives (0457)</h2>
-  <p>Structured guidance across all components of IGCSE Global Perspectives.</p>
-  <ul>
-    <li>Component 1: Written examination – reading, analysis, perspectives and evaluation</li>
-    <li>Component 2: Individual report – topic selection, research planning and report structure</li>
-    <li>Component 3: Team project – topic refinement, case study, evidence, action and reflection</li>
-    <li>Component‑wise checklists and guided support for students and teachers</li>
-  </ul>
+      <ul>
+        <li>
+          <a href=" 0457_Sample_Guide_TJ_2026-27.doc (1).pdf" download>
+            IGCSE Global Perspectives (0457) – Sample Guideline
+          </a>
+        </li>
+        <li>
+          <a href=" AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" download>
+            AS Level Global Perspectives & Research (9239) – Sample Guideline
+          </a>
+        </li>
+        <li>
+          <a href=" A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" download>
+            A Level Global Perspectives & Research (9239) – Sample Guideline
+          </a>
+        </li>
+      </ul>
 
-  <!-- AS/A Level 9239 Section -->
-  <h2>AS & A Level Global Perspectives & Research (9239)</h2>
-  <p>Advanced support in GPR skills for Components 1–4.</p>
-  <ul>
-    <li>Critical reading and analysis of complex texts</li>
-    <li>Argument building, perspectives, and evaluation</li>
-    <li>Research planning, methodology, and evidence use</li>
-    <li>Reflection, review, and improving academic writing</li>
-    <li>Component‑wise checklists for structured preparation and teaching</li>
-  </ul>
+      <p>
+        <em>
+          For custom packs with personalised To‑Do Lists for your topic, contact via WhatsApp or email.
+        </em>
+      </p>
+    </section>
 
-  <!-- Biology & Biotech Section -->
-  <h2>Biology & Biotechnology Notes</h2>
-  <p>Concept‑clear notes for teachers and advanced students.</p>
-  <ul>
-    <li>Basic cell biology notes aligned with classroom and exam needs</li>
-    <li>Biochemistry and molecular biology fundamentals</li>
-    <li>Biotechnology basics and PCR‑related concept notes</li>
-  </ul>
-
-  <!-- Peace & Sustainability Section -->
-  <h2>Peace & Sustainability: Projects and Lectures</h2>
-  <p>Project‑based learning and lectures for schools, teachers, and students.</p>
-  <ul>
-    <li>Peace and sustainability lecture ideas for assemblies and classes</li>
-    <li>Project support linked to global issues and SDGs</li>
-    <li>Guidance to design case studies and action‑based learning tasks</li>
-  </ul>
-
-  <!-- Checklists, samples, personalised support -->
-  <h2>Checklists, Samples, and Personalised Support</h2>
-  <p>
-    I offer component‑wise checklists for IGCSE Global Perspectives 0457 (Components 1, 2, and 3) and 
-    AS & A Level Global Perspectives & Research 9239 (Components 1–4), as well as basic cell biology 
-    and molecular biology notes.
-  </p>
-<section class="samples">
-  <h2>📘 Free Sample Guidelines</h2>
-  <p>Download component breakdowns and exam structure guides:</p>
-  
-  <ul>
-    <li>
-      <a href="0457_Sample_Guide_TJ_2026-27.doc (1).pdf" download>
-        IGCSE Global Perspectives (0457) – Sample Guideline
-      </a>
-    </li>
-    <li>
-      <a href="AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" download>
-        AS Level Global Perspectives & Research (9239) – Sample Guideline
-      </a>
-    </li>
-    <li>
-      <a href="A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" download>
-        A Level Global Perspectives & Research (9239) – Sample Guideline
-      </a>
-    </li>
-  </ul>
-  
-  <p><em>For custom packs with personalised To‑Do Lists for your topic, contact via WhatsApp or email.</em></p>
-</section>
-  <p>
-    Free samples are available on request. Personalised topic‑based checklists and guidance are provided 
-    after a short consultation, so that support is matched to each candidate’s chosen topic and context.
-  </p>
-<!-- Contact + call hours -->
-  <div class="cta">
-    <h3>Start with a free sample or consultation</h3>
-    <p>
-      For free samples or personalised component‑wise checklists and support, contact:
-    </p>
-    <p>
-      WhatsApp: 
-      <a href="https://wa.me/919629427522" target="_blank">+91 9629427522</a><br>
-      Email: starjomy@gmail.com<br>
-      Website: <strong>jomy-t-j.github.io</strong>
-    </p>
-    <p>
-      <strong>WhatsApp call availability:</strong><br>
-      Monday–Friday: 8:00–9:00 AM, 1:00–2:00 PM, 7:00–8:00 PM (IST)<br>
-      Weekends: 4:00–6:00 PM (IST)
-    </p>
-    <p>
-      If I’m unable to take your call, please leave a WhatsApp message; I’ll get back when I’m free or when I notice it.
-    </p>
-    <p>
-      When you message, please mention your level (IGCSE / AS / A Level / Teacher) and whether you need 
-      support in Global Perspectives, Biology/Biotech, or Peace & Sustainability.
-    </p>
+    <!-- Contact / CTA section -->
+    <section class="cta">
+      <h3>Start with a free sample or consultation</h3>
+      <p>
+        For free samples or personalised component‑wise checklists and support, contact:
+      </p>
+      <p>
+        WhatsApp: 
+        <a href="https://wa.me/919629427522" target="_blank">+91 9629427522</a><br>
+        Email: starjomy@gmail.com<br>
+        Website: <strong>jomy-t-j.github.io</strong>
+      </p>
+      <p>
+        <strong>WhatsApp call availability:</strong><br>
+        Monday–Friday: 8:00–9:00 AM, 1:00–2:00 PM, 7:00–8:00 PM (IST)<br>
+        Weekends: 4:00–6:00 PM IST
+      </p>
+      <p>
+        If I’m unable to take your call just now, please leave a WhatsApp message; I’ll get back when I’m free or when I notice it.
+      </p>
+      <p>
+        When you message, please mention:
+        <br>– Your level (IGCSE / AS / A Level / Teacher)<br>
+        – Which area you need: Global Perspectives, Biology/Biotech, or Peace & Sustainability
+      </p>
+    </section>
   </div>
 
-  <div class="footer">
-    <p>© 2026 TJ – Cambridge Global Perspectives, Biology & Sustainability Specialist. Personalised guidance and materials are provided for individual use and professional learning.</p>
-  </div>
-
+  <footer>
+    © 2025–2026 Jomy T J. All rights reserved. Sample guidelines for Cambridge Global Perspectives (0457 / 9239).
+  </footer>
 </body>
 </html>
