@@ -36,7 +36,37 @@
     a {
       color: #1a4e8c;
     }
-  </style>
+  </style>.samples {
+  background: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.samples h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.samples ul {
+  list-style: none;
+  padding: 0;
+}
+
+.samples li {
+  margin: 0.75rem 0;
+}
+
+.samples a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.samples a:hover {
+  text-decoration: underline;
+}
+
 </head>
 <body>
 
@@ -97,6 +127,30 @@
     AS & A Level Global Perspectives & Research 9239 (Components 1–4), as well as basic cell biology 
     and molecular biology notes.
   </p>
+<section class="samples">
+  <h2>📘 Free Sample Guidelines</h2>
+  <p>Download component breakdowns and exam structure guides:</p>
+  
+  <ul>
+    <li>
+      <a href="0457_Sample_Guide_TJ_2026-27.doc (1).pdf" download>
+        IGCSE Global Perspectives (0457) – Sample Guideline
+      </a>
+    </li>
+    <li>
+      <a href="AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" download>
+        AS Level Global Perspectives & Research (9239) – Sample Guideline
+      </a>
+    </li>
+    <li>
+      <a href="A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" download>
+        A Level Global Perspectives & Research (9239) – Sample Guideline
+      </a>
+    </li>
+  </ul>
+  
+  <p><em>For custom packs with personalised To‑Do Lists for your topic, contact via WhatsApp or email.</em></p>
+</section>
   <p>
     Free samples are available on request. Personalised topic‑based checklists and guidance are provided 
     after a short consultation, so that support is matched to each candidate’s chosen topic and context.
