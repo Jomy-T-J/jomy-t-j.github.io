@@ -25,7 +25,7 @@ I provide:
 
 Download component‑wise breakdowns for Cambridge Global Perspectives:
 
-- **IGCSE 0457** → [Download PDF](0457_Sample_Guide_TJ_2026-27.doc (1).pdf)  
+- **IGCSE 0457** → [Download PDF](0457_Sample_Guide_TJ_2026-27.doc.pdf)  
 - **AS Level 9239** → [Download PDF](AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf)  
 - **A Level 9239** → [Download PDF](A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf)  
 
@@ -82,7 +82,7 @@ If I’m unable to take your call, please leave a WhatsApp message; I’ll get b
 ## 📂 What’s in this repo?
 
 - `index.html` – main website page  
-- `0457_Sample_Guide_TJ_2026-27.doc (1).pdf` – free 0457 sample  
+- `0457_Sample_Guide_TJ_2026-27.doc.pdf` – free 0457 sample  
 - `AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf` – free AS 9239 sample  
 - `A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf` – free A Level 9239 sample  
 - `README.md` – this file  
