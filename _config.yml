@@ -1,5 +1,3 @@
-include:
-  - index.html
-exclude:
-  - README.md
-theme: null
+theme: minima
+index: index.html
+exclude: ["README.md"]
