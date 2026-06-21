@@ -1,1 +1,3 @@
-<script>window.location.replace("index.html")</script>
+---
+layout: none
+---
