@@ -3,440 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
   <meta name="description" content="Jomy T J – Cambridge Approved Examiner, IGCSE & AS/A Level Global Perspectives Specialist, Academic Leader, Biotechnologist, and Peace Advocate." />
-  <meta property="og:title" content="Jomy T J | Cambridge Educator & Academic Leader" />
-  <meta property="og:description" content="CAIE Approved Examiner | National Top Rank Mentor | IGCSE & AS/A Level Specialist" />
-  <meta property="og:url" content="https://jomy-t-j.github.io" />
   <title>Jomy T J | Cambridge Educator & Academic Leader</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: 'Inter', system-ui, sans-serif !important; font-size: 16px !important; line-height: 1.7 !important; color: #1a1a2e !important; background: #fafafa !important; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
 
-    :root {
-      --ink:       #1a1a2e;
-      --mid:       #4a4a6a;
-      --muted:     #7a7a9a;
-      --rule:      #e2e2ee;
-      --bg:        #fafafa;
-      --white:     #ffffff;
-      --gold:      #b8860b;
-      --gold-lt:   #f5e9c8;
-      --cambridge: #003b5c;
-      --cam-lt:    #e6eff5;
-      --accent:    #c0392b;
-      --radius:    6px;
-      --max:       860px;
-      --serif:     'Playfair Display', Georgia, serif;
-      --sans:      'Inter', system-ui, sans-serif;
-    }
+    nav { position: sticky !important; top: 0 !important; z-index: 100 !important; background: #003b5c !important; padding: 0 24px !important; display: flex !important; align-items: center !important; justify-content: space-between !important; height: 56px !important; }
+    .nav-brand { font-family: 'Playfair Display', Georgia, serif !important; font-size: 1.05rem !important; color: #fff !important; text-decoration: none !important; letter-spacing: .03em !important; }
+    .nav-links { display: flex !important; gap: 28px !important; list-style: none !important; }
+    .nav-links a { color: rgba(255,255,255,.82) !important; text-decoration: none !important; font-size: .82rem !important; font-weight: 500 !important; letter-spacing: .06em !important; text-transform: uppercase !important; transition: color .2s !important; }
+    .nav-links a:hover { color: #f5e9c8 !important; }
 
-    html { scroll-behavior: smooth; }
+    .hero { background: #003b5c !important; color: #fff !important; padding: 80px 24px 72px !important; text-align: center !important; position: relative !important; overflow: hidden !important; }
+    .hero-eyebrow { display: inline-block !important; font-size: .72rem !important; font-weight: 600 !important; letter-spacing: .14em !important; text-transform: uppercase !important; color: #f5e9c8 !important; border: 1px solid rgba(245,233,200,.35) !important; border-radius: 20px !important; padding: 4px 16px !important; margin-bottom: 24px !important; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif !important; font-size: clamp(2.2rem, 5vw, 3.4rem) !important; line-height: 1.15 !important; margin-bottom: 16px !important; color: #fff !important; }
+    .hero-sub { font-size: clamp(.95rem, 2vw, 1.08rem) !important; color: rgba(255,255,255,.78) !important; max-width: 600px !important; margin: 0 auto 32px !important; font-weight: 300 !important; }
+    .hero-badges { display: flex !important; flex-wrap: wrap !important; gap: 10px !important; justify-content: center !important; margin-bottom: 36px !important; }
+    .badge { background: rgba(255,255,255,.1) !important; border: 1px solid rgba(255,255,255,.22) !important; border-radius: 20px !important; padding: 5px 14px !important; font-size: .78rem !important; font-weight: 500 !important; color: rgba(255,255,255,.9) !important; white-space: nowrap !important; }
+    .badge.gold { background: rgba(184,134,11,.25) !important; border-color: #b8860b !important; color: #f5e9c8 !important; }
+    .hero-cta { display: flex !important; gap: 12px !important; justify-content: center !important; flex-wrap: wrap !important; }
+    .btn { display: inline-block !important; padding: 12px 26px !important; border-radius: 6px !important; font-size: .88rem !important; font-weight: 600 !important; text-decoration: none !important; transition: all .2s !important; cursor: pointer !important; border: none !important; }
+    .btn-primary { background: #b8860b !important; color: #1a1a2e !important; }
+    .btn-primary:hover { background: #a07609 !important; }
+    .btn-outline { background: transparent !important; border: 1.5px solid rgba(255,255,255,.5) !important; color: #fff !important; }
 
-    body {
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.7;
-      color: var(--ink);
-      background: var(--bg);
-    }
+    .achievement-strip { background: #b8860b !important; padding: 16px 24px !important; }
+    .achievement-inner { max-width: 860px !important; margin: 0 auto !important; display: flex !important; flex-wrap: wrap !important; gap: 8px 32px !important; justify-content: center !important; align-items: center !important; }
+    .ach-item { display: flex !important; align-items: center !important; gap: 8px !important; font-size: .82rem !important; font-weight: 600 !important; color: #1a1a2e !important; white-space: nowrap !important; }
 
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: var(--cambridge);
-      padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 56px;
-    }
-    .nav-brand {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: .03em;
-    }
-    .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a {
-      color: rgba(255,255,255,.82);
-      text-decoration: none;
-      font-size: .82rem;
-      font-weight: 500;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      transition: color .2s;
-    }
-    .nav-links a:hover { color: var(--gold-lt); }
+    section { padding: 72px 24px !important; }
+    section:nth-child(even) { background: #ffffff !important; }
+    .section-inner { max-width: 860px !important; margin: 0 auto !important; }
+    .section-label { font-size: .72rem !important; font-weight: 700 !important; letter-spacing: .14em !important; text-transform: uppercase !important; color: #003b5c !important; margin-bottom: 8px !important; }
+    .section-title { font-family: 'Playfair Display', Georgia, serif !important; font-size: clamp(1.6rem, 3vw, 2.1rem) !important; color: #1a1a2e !important; margin-bottom: 16px !important; line-height: 1.25 !important; }
+    .section-rule { width: 48px !important; height: 3px !important; background: #b8860b !important; margin-bottom: 32px !important; border-radius: 2px !important; }
 
-    /* ── HERO ── */
-    .hero {
-      background: var(--cambridge);
-      color: #fff;
-      padding: 80px 24px 72px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 60% 0%, rgba(184,134,11,.18) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: .72rem;
-      font-weight: 600;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--gold-lt);
-      border: 1px solid rgba(245,233,200,.35);
-      border-radius: 20px;
-      padding: 4px 16px;
-      margin-bottom: 24px;
-    }
-    .hero h1 {
-      font-family: var(--serif);
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      line-height: 1.15;
-      margin-bottom: 16px;
-      letter-spacing: -.01em;
-    }
-    .hero-sub {
-      font-size: clamp(.95rem, 2vw, 1.08rem);
-      color: rgba(255,255,255,.78);
-      max-width: 600px;
-      margin: 0 auto 32px;
-      font-weight: 300;
-    }
-    .hero-badges {
-      display: flex; flex-wrap: wrap; gap: 10px;
-      justify-content: center;
-      margin-bottom: 36px;
-    }
-    .badge {
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 20px;
-      padding: 5px 14px;
-      font-size: .78rem;
-      font-weight: 500;
-      color: rgba(255,255,255,.9);
-      white-space: nowrap;
-    }
-    .badge.gold { background: rgba(184,134,11,.25); border-color: var(--gold); color: var(--gold-lt); }
-    .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn {
-      display: inline-block;
-      padding: 12px 26px;
-      border-radius: var(--radius);
-      font-size: .88rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all .2s;
-      cursor: pointer;
-      border: none;
-    }
-    .btn-primary {
-      background: var(--gold);
-      color: var(--ink);
-    }
-    .btn-primary:hover { background: #a07609; transform: translateY(-1px); }
-    .btn-outline {
-      background: transparent;
-      border: 1.5px solid rgba(255,255,255,.5);
-      color: #fff;
-    }
-    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+    .about-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 48px !important; align-items: start !important; }
+    .about-text p { color: #4a4a6a !important; margin-bottom: 16px !important; }
+    .credential-list { list-style: none !important; }
+    .credential-list li { display: flex !important; gap: 12px !important; align-items: flex-start !important; padding: 12px 0 !important; border-bottom: 1px solid #e2e2ee !important; font-size: .9rem !important; color: #4a4a6a !important; }
+    .credential-list li:last-child { border-bottom: none !important; }
+    .cred-icon { width: 28px !important; height: 28px !important; background: #e6eff5 !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: .85rem !important; flex-shrink: 0 !important; }
+    .cred-text strong { display: block !important; color: #1a1a2e !important; font-size: .88rem !important; }
 
-    /* ── ACHIEVEMENT STRIP ── */
-    .achievement-strip {
-      background: var(--gold);
-      padding: 16px 24px;
-    }
-    .achievement-inner {
-      max-width: var(--max);
-      margin: 0 auto;
-      display: flex; flex-wrap: wrap; gap: 8px 32px;
-      justify-content: center; align-items: center;
-    }
-    .ach-item {
-      display: flex; align-items: center; gap: 8px;
-      font-size: .82rem;
-      font-weight: 600;
-      color: var(--ink);
-      white-space: nowrap;
-    }
-    .ach-icon { font-size: 1rem; }
+    .timeline { position: relative !important; padding-left: 28px !important; }
+    .timeline::before { content: '' !important; position: absolute !important; left: 7px !important; top: 6px !important; bottom: 6px !important; width: 2px !important; background: #e2e2ee !important; }
+    .tl-item { position: relative !important; margin-bottom: 36px !important; }
+    .tl-dot { position: absolute !important; left: -28px !important; top: 5px !important; width: 14px !important; height: 14px !important; border-radius: 50% !important; background: #003b5c !important; border: 2px solid #fff !important; box-shadow: 0 0 0 2px #003b5c !important; }
+    .tl-dot.gold-dot { background: #b8860b !important; box-shadow: 0 0 0 2px #b8860b !important; }
+    .tl-date { font-size: .72rem !important; font-weight: 700 !important; letter-spacing: .08em !important; text-transform: uppercase !important; color: #003b5c !important; margin-bottom: 4px !important; }
+    .tl-role { font-weight: 600 !important; font-size: .95rem !important; color: #1a1a2e !important; margin-bottom: 2px !important; }
+    .tl-org { font-size: .85rem !important; color: #7a7a9a !important; margin-bottom: 8px !important; }
+    .tl-desc { font-size: .88rem !important; color: #4a4a6a !important; }
+    .tl-tag { display: inline-block !important; background: #f5e9c8 !important; color: #b8860b !important; font-size: .7rem !important; font-weight: 700 !important; padding: 2px 8px !important; border-radius: 10px !important; margin-top: 6px !important; border: 1px solid rgba(184,134,11,.3) !important; }
+    .tl-tag.blue { background: #e6eff5 !important; color: #003b5c !important; border-color: rgba(0,59,92,.25) !important; }
 
-    /* ── SECTIONS ── */
-    section { padding: 72px 24px; }
-    .section-inner { max-width: var(--max); margin: 0 auto; }
-    .section-label {
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--cambridge);
-      margin-bottom: 8px;
-    }
-    .section-title {
-      font-family: var(--serif);
-      font-size: clamp(1.6rem, 3vw, 2.1rem);
-      color: var(--ink);
-      margin-bottom: 16px;
-      line-height: 1.25;
-    }
-    .section-rule {
-      width: 48px; height: 3px;
-      background: var(--gold);
-      margin-bottom: 32px;
-      border-radius: 2px;
-    }
-    section:nth-child(even) { background: var(--white); }
+    .cards-grid { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important; gap: 20px !important; }
+    .card { background: #ffffff !important; border: 1px solid #e2e2ee !important; border-radius: 6px !important; padding: 24px !important; transition: box-shadow .2s, border-color .2s !important; }
+    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08) !important; border-color: #003b5c !important; }
+    .card-icon { font-size: 1.6rem !important; margin-bottom: 12px !important; }
+    .card-title { font-weight: 600 !important; font-size: .95rem !important; color: #1a1a2e !important; margin-bottom: 8px !important; }
+    .card-desc { font-size: .84rem !important; color: #4a4a6a !important; line-height: 1.6 !important; }
 
-    /* ── ABOUT ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-    .about-text p { color: var(--mid); margin-bottom: 16px; }
-    .about-text p:last-child { margin-bottom: 0; }
-    .credential-list { list-style: none; }
-    .credential-list li {
-      display: flex; gap: 12px; align-items: flex-start;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--rule);
-      font-size: .9rem;
-      color: var(--mid);
-    }
-    .credential-list li:last-child { border-bottom: none; }
-    .cred-icon {
-      width: 28px; height: 28px;
-      background: var(--cam-lt);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: .85rem;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .cred-text strong { display: block; color: var(--ink); font-size: .88rem; }
+    .pub-item { border-left: 3px solid #003b5c !important; padding: 12px 0 12px 20px !important; margin-bottom: 20px !important; }
+    .pub-type { font-size: .68rem !important; font-weight: 700 !important; letter-spacing: .1em !important; text-transform: uppercase !important; color: #003b5c !important; margin-bottom: 4px !important; }
+    .pub-title { font-size: .92rem !important; font-weight: 500 !important; color: #1a1a2e !important; margin-bottom: 4px !important; }
+    .pub-meta { font-size: .8rem !important; color: #7a7a9a !important; }
 
-    /* ── TIMELINE ── */
-    .timeline { position: relative; padding-left: 28px; }
-    .timeline::before {
-      content: '';
-      position: absolute; left: 7px; top: 6px; bottom: 6px;
-      width: 2px; background: var(--rule);
-    }
-    .tl-item { position: relative; margin-bottom: 36px; }
-    .tl-item:last-child { margin-bottom: 0; }
-    .tl-dot {
-      position: absolute; left: -28px; top: 5px;
-      width: 14px; height: 14px;
-      border-radius: 50%;
-      background: var(--cambridge);
-      border: 2px solid var(--white);
-      box-shadow: 0 0 0 2px var(--cambridge);
-    }
-    .tl-dot.gold-dot { background: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
-    .tl-date {
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--cambridge);
-      margin-bottom: 4px;
-    }
-    .tl-role { font-weight: 600; font-size: .95rem; color: var(--ink); margin-bottom: 2px; }
-    .tl-org { font-size: .85rem; color: var(--muted); margin-bottom: 8px; }
-    .tl-desc { font-size: .88rem; color: var(--mid); }
-    .tl-tag {
-      display: inline-block;
-      background: var(--gold-lt);
-      color: var(--gold);
-      font-size: .7rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 10px;
-      margin-top: 6px;
-      border: 1px solid rgba(184,134,11,.3);
-    }
-    .tl-tag.blue { background: var(--cam-lt); color: var(--cambridge); border-color: rgba(0,59,92,.25); }
+    .resources-grid { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important; gap: 20px !important; }
+    .resource-card { background: #e6eff5 !important; border: 1px solid rgba(0,59,92,.15) !important; border-radius: 6px !important; padding: 24px !important; display: flex !important; flex-direction: column !important; gap: 12px !important; }
+    .resource-level { font-size: .68rem !important; font-weight: 700 !important; letter-spacing: .1em !important; text-transform: uppercase !important; color: #003b5c !important; }
+    .resource-title { font-weight: 600 !important; font-size: 1rem !important; color: #1a1a2e !important; }
+    .resource-desc { font-size: .83rem !important; color: #4a4a6a !important; flex: 1 !important; }
+    .btn-sm { display: inline-block !important; padding: 8px 18px !important; background: #003b5c !important; color: #fff !important; border-radius: 6px !important; font-size: .8rem !important; font-weight: 600 !important; text-decoration: none !important; text-align: center !important; }
 
-    /* ── EXPERTISE CARDS ── */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: var(--white);
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      padding: 24px;
-      transition: box-shadow .2s, border-color .2s;
-    }
-    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); border-color: var(--cambridge); }
-    .card-icon { font-size: 1.6rem; margin-bottom: 12px; }
-    .card-title { font-weight: 600; font-size: .95rem; color: var(--ink); margin-bottom: 8px; }
-    .card-desc { font-size: .84rem; color: var(--mid); line-height: 1.6; }
+    .pack-box { background: #ffffff !important; border: 1.5px solid #b8860b !important; border-radius: 6px !important; padding: 36px !important; max-width: 560px !important; margin: 0 auto !important; }
+    .pack-title { font-family: 'Playfair Display', Georgia, serif !important; font-size: 1.4rem !important; margin-bottom: 12px !important; color: #1a1a2e !important; }
+    .pack-list { list-style: none !important; margin-bottom: 20px !important; }
+    .pack-list li { padding: 6px 0 !important; font-size: .9rem !important; color: #4a4a6a !important; border-bottom: 1px solid #e2e2ee !important; display: flex !important; gap: 10px !important; }
+    .pack-list li::before { content: '✓' !important; color: #b8860b !important; font-weight: 700 !important; flex-shrink: 0 !important; }
+    .pack-steps p { font-weight: 600 !important; margin-bottom: 10px !important; font-size: .9rem !important; color: #1a1a2e !important; }
+    .step-row { display: flex !important; gap: 12px !important; align-items: flex-start !important; margin-bottom: 10px !important; font-size: .86rem !important; color: #4a4a6a !important; }
+    .step-num { width: 22px !important; height: 22px !important; border-radius: 50% !important; background: #003b5c !important; color: #fff !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: .7rem !important; font-weight: 700 !important; flex-shrink: 0 !important; }
 
-    /* ── PUBLICATIONS ── */
-    .pub-item {
-      border-left: 3px solid var(--cambridge);
-      padding: 12px 0 12px 20px;
-      margin-bottom: 20px;
-    }
-    .pub-item:last-child { margin-bottom: 0; }
-    .pub-type {
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--cambridge);
-      margin-bottom: 4px;
-    }
-    .pub-title { font-size: .92rem; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
-    .pub-meta { font-size: .8rem; color: var(--muted); }
+    .contact-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 40px !important; align-items: start !important; }
+    .contact-method { display: flex !important; gap: 14px !important; align-items: flex-start !important; margin-bottom: 24px !important; }
+    .contact-icon { width: 40px !important; height: 40px !important; background: #e6eff5 !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 1.1rem !important; flex-shrink: 0 !important; }
+    .contact-label { font-size: .75rem !important; color: #7a7a9a !important; text-transform: uppercase !important; letter-spacing: .08em !important; margin-bottom: 2px !important; }
+    .contact-value { font-size: .92rem !important; font-weight: 500 !important; color: #1a1a2e !important; }
+    .contact-value a { color: #003b5c !important; text-decoration: none !important; }
+    .availability { background: #e6eff5 !important; border-radius: 6px !important; padding: 20px !important; }
+    .avail-title { font-weight: 600 !important; font-size: .88rem !important; margin-bottom: 12px !important; color: #003b5c !important; }
+    .avail-row { display: flex !important; justify-content: space-between !important; font-size: .82rem !important; color: #4a4a6a !important; padding: 5px 0 !important; border-bottom: 1px solid rgba(0,59,92,.1) !important; }
+    .avail-day { font-weight: 500 !important; color: #1a1a2e !important; }
 
-    /* ── RESOURCES ── */
-    .resources-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .resource-card {
-      background: var(--cam-lt);
-      border: 1px solid rgba(0,59,92,.15);
-      border-radius: var(--radius);
-      padding: 24px;
-      display: flex; flex-direction: column; gap: 12px;
-    }
-    .resource-level {
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--cambridge);
-    }
-    .resource-title { font-weight: 600; font-size: 1rem; color: var(--ink); }
-    .resource-desc { font-size: .83rem; color: var(--mid); flex: 1; }
-    .resource-card .btn-sm {
-      display: inline-block;
-      padding: 8px 18px;
-      background: var(--cambridge);
-      color: #fff;
-      border-radius: var(--radius);
-      font-size: .8rem;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
-      transition: background .2s;
-    }
-    .resource-card .btn-sm:hover { background: #002840; }
+    footer { background: #1a1a2e !important; color: rgba(255,255,255,.6) !important; text-align: center !important; padding: 32px 24px !important; font-size: .8rem !important; }
+    footer a { color: rgba(255,255,255,.8) !important; text-decoration: none !important; }
+    .footer-links { display: flex !important; gap: 24px !important; justify-content: center !important; margin-bottom: 12px !important; flex-wrap: wrap !important; }
 
-    /* ── CUSTOM PACK ── */
-    .pack-box {
-      background: var(--white);
-      border: 1.5px solid var(--gold);
-      border-radius: var(--radius);
-      padding: 36px;
-      max-width: 560px;
-      margin: 0 auto;
-    }
-    .pack-title { font-family: var(--serif); font-size: 1.4rem; margin-bottom: 12px; }
-    .pack-list { list-style: none; margin-bottom: 20px; }
-    .pack-list li {
-      padding: 6px 0;
-      font-size: .9rem;
-      color: var(--mid);
-      border-bottom: 1px solid var(--rule);
-      display: flex; gap: 10px;
-    }
-    .pack-list li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
-    .pack-steps { margin-bottom: 24px; }
-    .pack-steps p { font-weight: 600; margin-bottom: 10px; font-size: .9rem; }
-    .step-row {
-      display: flex; gap: 12px; align-items: flex-start;
-      margin-bottom: 10px;
-      font-size: .86rem;
-      color: var(--mid);
-    }
-    .step-num {
-      width: 22px; height: 22px; border-radius: 50%;
-      background: var(--cambridge); color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-size: .7rem; font-weight: 700; flex-shrink: 0; margin-top: 1px;
-    }
-
-    /* ── CONTACT ── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-    }
-    .contact-method {
-      display: flex; gap: 14px; align-items: flex-start;
-      margin-bottom: 24px;
-    }
-    .contact-icon {
-      width: 40px; height: 40px;
-      background: var(--cam-lt);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem; flex-shrink: 0;
-    }
-    .contact-label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 2px; }
-    .contact-value { font-size: .92rem; font-weight: 500; color: var(--ink); }
-    .contact-value a { color: var(--cambridge); text-decoration: none; }
-    .contact-value a:hover { text-decoration: underline; }
-    .availability {
-      background: var(--cam-lt);
-      border-radius: var(--radius);
-      padding: 20px;
-    }
-    .avail-title { font-weight: 600; font-size: .88rem; margin-bottom: 12px; color: var(--cambridge); }
-    .avail-row {
-      display: flex; justify-content: space-between;
-      font-size: .82rem; color: var(--mid);
-      padding: 5px 0;
-      border-bottom: 1px solid rgba(0,59,92,.1);
-    }
-    .avail-row:last-child { border-bottom: none; }
-    .avail-day { font-weight: 500; color: var(--ink); }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--ink);
-      color: rgba(255,255,255,.6);
-      text-align: center;
-      padding: 32px 24px;
-      font-size: .8rem;
-    }
-    footer a { color: rgba(255,255,255,.8); text-decoration: none; }
-    footer a:hover { color: var(--gold-lt); }
-    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
-
-    /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
-      nav { padding: 0 16px; }
-      .nav-links { gap: 16px; }
-      .nav-links a { font-size: .72rem; }
-      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-      section { padding: 52px 16px; }
+      .nav-links { gap: 16px !important; }
+      .nav-links a { font-size: .72rem !important; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+      section { padding: 52px 16px !important; }
     }
   </style>
 </head>
 <body>
-
-<!-- ── NAV ── -->
 <nav>
   <a class="nav-brand" href="#top">Jomy T J</a>
   <ul class="nav-links">
@@ -448,7 +128,6 @@
   </ul>
 </nav>
 
-<!-- ── HERO ── -->
 <section class="hero" id="top">
   <div class="hero-eyebrow">Cambridge Approved Examiner · CAIE 2026</div>
   <h1>Jomy T J</h1>
@@ -466,17 +145,15 @@
   </div>
 </section>
 
-<!-- ── ACHIEVEMENT STRIP ── -->
 <div class="achievement-strip">
   <div class="achievement-inner">
-    <div class="ach-item"><span class="ach-icon">🥇</span> National Top Rank · IGCSE GP 2024</div>
-    <div class="ach-item"><span class="ach-icon">⭐</span> Multiple A* Results · CAIE 2024</div>
-    <div class="ach-item"><span class="ach-icon">🥇</span> Highest Gold Awards · Checkpoint GP 2025</div>
-    <div class="ach-item"><span class="ach-icon">📜</span> CAIE Approved Examiner · 2026</div>
+    <div class="ach-item"><span>🥇</span> National Top Rank · IGCSE GP 2024</div>
+    <div class="ach-item"><span>⭐</span> Multiple A* Results · CAIE 2024</div>
+    <div class="ach-item"><span>🥇</span> Highest Gold Awards · Checkpoint GP 2025</div>
+    <div class="ach-item"><span>📜</span> CAIE Approved Examiner · 2026</div>
   </div>
 </div>
 
-<!-- ── ABOUT ── -->
 <section id="about">
   <div class="section-inner">
     <div class="section-label">Who I Am</div>
@@ -491,249 +168,79 @@
       </div>
       <div>
         <ul class="credential-list">
-          <li>
-            <div class="cred-icon">📋</div>
-            <div class="cred-text">
-              <strong>CAIE Approved Examiner</strong>
-              AS &amp; A Level Global Perspectives &amp; Research · 2026
-            </div>
-          </li>
-          <li>
-            <div class="cred-icon">🏫</div>
-            <div class="cred-text">
-              <strong>Internal CAIE Moderator</strong>
-              Global Perspectives · The Indian Public School, Cambridge
-            </div>
-          </li>
-          <li>
-            <div class="cred-icon">🔬</div>
-            <div class="cred-text">
-              <strong>Published Researcher</strong>
-              Molecular Biology · Int. Journal of Life Sciences · 2018
-            </div>
-          </li>
-          <li>
-            <div class="cred-icon">🕊️</div>
-            <div class="cred-text">
-              <strong>Certified Peace Instructor</strong>
-              IWPG · Geneva Peace Week Participant
-            </div>
-          </li>
-          <li>
-            <div class="cred-icon">🎓</div>
-            <div class="cred-text">
-              <strong>M.Sc. Biotechnology</strong>
-              Kongunadu Arts &amp; Science College · 2015
-            </div>
-          </li>
-          <li>
-            <div class="cred-icon">🌱</div>
-            <div class="cred-text">
-              <strong>Climate &amp; Sustainability Certified</strong>
-              EDF · UNSSC/UNEP · Siemens · 2025
-            </div>
-          </li>
+          <li><div class="cred-icon">📋</div><div class="cred-text"><strong>CAIE Approved Examiner</strong>AS &amp; A Level Global Perspectives &amp; Research · 2026</div></li>
+          <li><div class="cred-icon">🏫</div><div class="cred-text"><strong>Internal CAIE Moderator</strong>Global Perspectives · The Indian Public School, Cambridge</div></li>
+          <li><div class="cred-icon">🔬</div><div class="cred-text"><strong>Published Researcher</strong>Molecular Biology · Int. Journal of Life Sciences · 2018</div></li>
+          <li><div class="cred-icon">🕊️</div><div class="cred-text"><strong>Certified Peace Instructor</strong>IWPG · Geneva Peace Week Participant</div></li>
+          <li><div class="cred-icon">🎓</div><div class="cred-text"><strong>M.Sc. Biotechnology</strong>Kongunadu Arts &amp; Science College · 2015</div></li>
+          <li><div class="cred-icon">🌱</div><div class="cred-text"><strong>Climate &amp; Sustainability Certified</strong>EDF · UNSSC/UNEP · Siemens · 2025</div></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── EXPERIENCE ── -->
 <section id="experience">
   <div class="section-inner">
     <div class="section-label">Career Journey</div>
     <h2 class="section-title">Experience &amp; Leadership</h2>
     <div class="section-rule"></div>
     <div class="timeline">
-
-      <div class="tl-item">
-        <div class="tl-dot gold-dot"></div>
-        <div class="tl-date">May 2026 – Present</div>
-        <div class="tl-role">Approved Examiner – AS &amp; A Level Global Perspectives &amp; Research</div>
-        <div class="tl-org">Cambridge University Press &amp; Assessment (CAIE) · Remote</div>
-        <div class="tl-desc">Assessing AS &amp; A Level scripts under internationally recognised Cambridge Assessment frameworks, applying standardised marking criteria to ensure quality and consistency.</div>
-        <span class="tl-tag">CAIE Examiner</span>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot gold-dot"></div>
-        <div class="tl-date">Jun 2026 – Present</div>
-        <div class="tl-role">Career Mentor</div>
-        <div class="tl-org">Global Mentorship Initiative · Freelance</div>
-        <div class="tl-desc">Mentoring early-career professionals and consultants on career planning, professional skills development, and goal-setting through structured one-to-one sessions.</div>
-        <span class="tl-tag blue">Mentorship</span>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">Jul 2024 – May 2025</div>
-        <div class="tl-role">Cambridge Global Perspectives Facilitator &amp; Internal CAIE Moderator</div>
-        <div class="tl-org">The Indian Public School (Cambridge), Erode, Tamil Nadu</div>
-        <div class="tl-desc">Led IGCSE Global Perspectives and Lower Secondary Checkpoint curriculum as internal subject lead and CAIE moderator. Trained successor teacher, managed stakeholder communications, and drove exceptional student outcomes.</div>
-        <span class="tl-tag">🏆 National Top Rank · A* Results · Gold Awards</span>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">May 2020 – Present</div>
-        <div class="tl-role">Independent Educator – Biology / Global Perspectives / Literacy</div>
-        <div class="tl-org">Freelance Teaching · Online &amp; In-Person, Tamil Nadu</div>
-        <div class="tl-desc">Personalised IGCSE, AS &amp; A Level, and CBSE instruction across Biology and Global Perspectives. Mentoring students in research projects, extended essays, and critical inquiry.</div>
-        <span class="tl-tag blue">IGCSE · AS/A Level · CBSE</span>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">Apr 2023 – Jul 2025</div>
-        <div class="tl-role">Public Speaking &amp; Communication Facilitator</div>
-        <div class="tl-org">PlanetSpark · Remote</div>
-        <div class="tl-desc">Structured communication and public speaking sessions building student confidence, oratory, and creative expression.</div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">Aug 2023 – Nov 2023</div>
-        <div class="tl-role">PCR Technology Course Mentor</div>
-        <div class="tl-org">Bversity | Naan Mudhalvan Scheme – Government of Tamil Nadu</div>
-        <div class="tl-desc">Delivered PCR training and practical biotechnology instruction to final-year allied health science graduates under a state-sponsored initiative.</div>
-        <span class="tl-tag blue">Biotechnology</span>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">Sep 2021 – Apr 2022</div>
-        <div class="tl-role">Monitoring &amp; Evaluation Officer</div>
-        <div class="tl-org">Good Shepherd Health Education Centre (GSHEC) · KKS-BMZ, Germany</div>
-        <div class="tl-desc">Evaluated women's socio-economic empowerment programmes. Participated in state-level gender budgeting consultations, Tamil Nadu 2022.</div>
-        <span class="tl-tag blue">M&amp;E · Gender &amp; Development</span>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">Apr 2018 – Mar 2019</div>
-        <div class="tl-role">PGT – Biology (CBSE)</div>
-        <div class="tl-org">Shemford Group of Schools, Vanniyambadi, Tamil Nadu</div>
-        <div class="tl-desc">Delivered Grades 9–12 CBSE Biology. Produced a successful Board batch in 2019 with strong Class 10 and 12 outcomes.</div>
-      </div>
-
+      <div class="tl-item"><div class="tl-dot gold-dot"></div><div class="tl-date">May 2026 – Present</div><div class="tl-role">Approved Examiner – AS &amp; A Level Global Perspectives &amp; Research</div><div class="tl-org">Cambridge University Press &amp; Assessment (CAIE) · Remote</div><div class="tl-desc">Assessing AS &amp; A Level scripts under internationally recognised Cambridge Assessment frameworks, applying standardised marking criteria to ensure quality and consistency.</div><span class="tl-tag">CAIE Examiner</span></div>
+      <div class="tl-item"><div class="tl-dot gold-dot"></div><div class="tl-date">Jun 2026 – Present</div><div class="tl-role">Career Mentor</div><div class="tl-org">Global Mentorship Initiative · Freelance</div><div class="tl-desc">Mentoring early-career professionals and consultants on career planning, professional skills development, and goal-setting through structured one-to-one sessions.</div><span class="tl-tag blue">Mentorship</span></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jul 2024 – May 2025</div><div class="tl-role">Cambridge Global Perspectives Facilitator &amp; Internal CAIE Moderator</div><div class="tl-org">The Indian Public School (Cambridge), Erode, Tamil Nadu</div><div class="tl-desc">Led IGCSE Global Perspectives and Lower Secondary Checkpoint curriculum as internal subject lead and CAIE moderator. Trained successor teacher, managed stakeholder communications, and drove exceptional student outcomes.</div><span class="tl-tag">🏆 National Top Rank · A* Results · Gold Awards</span></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">May 2020 – Present</div><div class="tl-role">Independent Educator – Biology / Global Perspectives / Literacy</div><div class="tl-org">Freelance Teaching · Online &amp; In-Person, Tamil Nadu</div><div class="tl-desc">Personalised IGCSE, AS &amp; A Level, and CBSE instruction across Biology and Global Perspectives. Mentoring students in research projects, extended essays, and critical inquiry.</div><span class="tl-tag blue">IGCSE · AS/A Level · CBSE</span></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Apr 2023 – Jul 2025</div><div class="tl-role">Public Speaking &amp; Communication Facilitator</div><div class="tl-org">PlanetSpark · Remote</div><div class="tl-desc">Structured communication and public speaking sessions building student confidence, oratory, and creative expression.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Aug 2023 – Nov 2023</div><div class="tl-role">PCR Technology Course Mentor</div><div class="tl-org">Bversity | Naan Mudhalvan Scheme – Government of Tamil Nadu</div><div class="tl-desc">Delivered PCR training and practical biotechnology instruction to final-year allied health science graduates under a state-sponsored initiative.</div><span class="tl-tag blue">Biotechnology</span></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Sep 2021 – Apr 2022</div><div class="tl-role">Monitoring &amp; Evaluation Officer</div><div class="tl-org">Good Shepherd Health Education Centre (GSHEC) · KKS-BMZ, Germany</div><div class="tl-desc">Evaluated women's socio-economic empowerment programmes. Participated in state-level gender budgeting consultations, Tamil Nadu 2022.</div><span class="tl-tag blue">M&amp;E · Gender &amp; Development</span></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Apr 2018 – Mar 2019</div><div class="tl-role">PGT – Biology (CBSE)</div><div class="tl-org">Shemford Group of Schools, Vanniyambadi, Tamil Nadu</div><div class="tl-desc">Delivered Grades 9–12 CBSE Biology. Produced a successful Board batch in 2019 with strong Class 10 and 12 outcomes.</div></div>
     </div>
   </div>
 </section>
 
-<!-- ── EXPERTISE ── -->
 <section id="expertise">
   <div class="section-inner">
     <div class="section-label">What I Do</div>
     <h2 class="section-title">Areas of Expertise</h2>
     <div class="section-rule"></div>
     <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">📐</div>
-        <div class="card-title">IGCSE Global Perspectives (0457)</div>
-        <div class="card-desc">Full curriculum delivery, internal moderation, coursework guidance, and student outcome management across Written, Individual Report, and Team Project components.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎓</div>
-        <div class="card-title">AS &amp; A Level Global Perspectives (9239)</div>
-        <div class="card-desc">CAIE Approved Examiner. Expert in Written, Essay, Group Project, and Research Report components. Marking, standardisation, and extended essay mentorship.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔬</div>
-        <div class="card-title">Biology &amp; Biotechnology</div>
-        <div class="card-desc">CAIE and CBSE Biology instruction for Grades 9–12. Molecular biology research experience including PCR techniques and published cardiovascular disease research.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🧭</div>
-        <div class="card-title">Academic Leadership &amp; Coordination</div>
-        <div class="card-desc">Curriculum framework design, teacher training, succession planning, CAIE moderation, stakeholder engagement, and whole-school academic outcome management.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🌍</div>
-        <div class="card-title">Peace &amp; Sustainability Education</div>
-        <div class="card-desc">Certified Peace Instructor (IWPG). Climate literacy, SDG integration, gender equity advocacy, and global citizenship programme design.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">✍️</div>
-        <div class="card-title">Research &amp; Academic Writing</div>
-        <div class="card-desc">Peer-reviewed publication, extended essay guidance, science communication, and educational journalism. 14 articles published in Times NIE and The TIPSIAN Weekly.</div>
-      </div>
+      <div class="card"><div class="card-icon">📐</div><div class="card-title">IGCSE Global Perspectives (0457)</div><div class="card-desc">Full curriculum delivery, internal moderation, coursework guidance, and student outcome management across Written, Individual Report, and Team Project components.</div></div>
+      <div class="card"><div class="card-icon">🎓</div><div class="card-title">AS &amp; A Level Global Perspectives (9239)</div><div class="card-desc">CAIE Approved Examiner. Expert in Written, Essay, Group Project, and Research Report components. Marking, standardisation, and extended essay mentorship.</div></div>
+      <div class="card"><div class="card-icon">🔬</div><div class="card-title">Biology &amp; Biotechnology</div><div class="card-desc">CAIE and CBSE Biology instruction for Grades 9–12. Molecular biology research experience including PCR techniques and published cardiovascular disease research.</div></div>
+      <div class="card"><div class="card-icon">🧭</div><div class="card-title">Academic Leadership &amp; Coordination</div><div class="card-desc">Curriculum framework design, teacher training, succession planning, CAIE moderation, stakeholder engagement, and whole-school academic outcome management.</div></div>
+      <div class="card"><div class="card-icon">🌍</div><div class="card-title">Peace &amp; Sustainability Education</div><div class="card-desc">Certified Peace Instructor (IWPG). Climate literacy, SDG integration, gender equity advocacy, and global citizenship programme design.</div></div>
+      <div class="card"><div class="card-icon">✍️</div><div class="card-title">Research &amp; Academic Writing</div><div class="card-desc">Peer-reviewed publication, extended essay guidance, science communication, and educational journalism. 14 articles published in Times NIE and The TIPSIAN Weekly.</div></div>
     </div>
   </div>
 </section>
 
-<!-- ── PUBLICATIONS ── -->
 <section>
   <div class="section-inner">
     <div class="section-label">Research &amp; Writing</div>
     <h2 class="section-title">Publications</h2>
     <div class="section-rule"></div>
-
-    <div class="pub-item">
-      <div class="pub-type">Peer-Reviewed Journal Article</div>
-      <div class="pub-title">Molecular assessment of Coronary Heart Disease (CHD) risk in obese and overweight subjects</div>
-      <div class="pub-meta">Jomy TJ &amp; Lakshman Kumar B · International Journal of Life Sciences, Special Issue, A11: 41–48 · 2018</div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-type">Educational Article · Times NIE</div>
-      <div class="pub-title">Breaking barriers: Women in leadership and the AI gender gap</div>
-      <div class="pub-meta">Times NIE · February 2025</div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-type">Educational Article · Times NIE</div>
-      <div class="pub-title">Standing together against bullying: Creating a safe learning environment</div>
-      <div class="pub-meta">Times NIE · November 2024</div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-type">Educational Article · The TIPSIAN Weekly</div>
-      <div class="pub-title">Forced displacements and climate change impacts</div>
-      <div class="pub-meta">The TIPSIAN Weekly · February 2025</div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-type">Educational Article · Times NIE</div>
-      <div class="pub-title">Cultural custodians: Young minds on a mission</div>
-      <div class="pub-meta">Times NIE · March 2025</div>
-    </div>
-
-    <p style="font-size:.84rem;color:var(--muted);margin-top:20px;">+ 10 additional articles published in Times NIE and The TIPSIAN Weekly (2024–2025) on education, gender equity, climate change, and global citizenship.</p>
+    <div class="pub-item"><div class="pub-type">Peer-Reviewed Journal Article</div><div class="pub-title">Molecular assessment of Coronary Heart Disease (CHD) risk in obese and overweight subjects</div><div class="pub-meta">Jomy TJ &amp; Lakshman Kumar B · International Journal of Life Sciences, Special Issue, A11: 41–48 · 2018</div></div>
+    <div class="pub-item"><div class="pub-type">Educational Article · Times NIE</div><div class="pub-title">Breaking barriers: Women in leadership and the AI gender gap</div><div class="pub-meta">Times NIE · February 2025</div></div>
+    <div class="pub-item"><div class="pub-type">Educational Article · Times NIE</div><div class="pub-title">Standing together against bullying: Creating a safe learning environment</div><div class="pub-meta">Times NIE · November 2024</div></div>
+    <div class="pub-item"><div class="pub-type">Educational Article · The TIPSIAN Weekly</div><div class="pub-title">Forced displacements and climate change impacts</div><div class="pub-meta">The TIPSIAN Weekly · February 2025</div></div>
+    <div class="pub-item"><div class="pub-type">Educational Article · Times NIE</div><div class="pub-title">Cultural custodians: Young minds on a mission</div><div class="pub-meta">Times NIE · March 2025</div></div>
+    <p style="font-size:.84rem;color:#7a7a9a;margin-top:20px;">+ 10 additional articles published in Times NIE and The TIPSIAN Weekly (2024–2025) on education, gender equity, climate change, and global citizenship.</p>
   </div>
 </section>
 
-<!-- ── RESOURCES ── -->
 <section id="resources">
   <div class="section-inner">
     <div class="section-label">For Students &amp; Teachers</div>
     <h2 class="section-title">Free Study Resources</h2>
     <div class="section-rule"></div>
     <div class="resources-grid">
-      <div class="resource-card">
-        <div class="resource-level">IGCSE · 0457</div>
-        <div class="resource-title">Global Perspectives Sample Guide</div>
-        <div class="resource-desc">Component codes, weightings, exam structure, and what examiners look for across Written, Individual Report, and Team Project.</div>
-        <a class="btn-sm" href="0457_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a>
-      </div>
-      <div class="resource-card">
-        <div class="resource-level">AS Level · 9239</div>
-        <div class="resource-title">Global Perspectives Sample Guide</div>
-        <div class="resource-desc">Component codes, weightings, structure breakdowns, and examiner expectations for AS Level Written, Essay, and Group Project.</div>
-        <a class="btn-sm" href="AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a>
-      </div>
-      <div class="resource-card">
-        <div class="resource-level">A Level · 9239</div>
-        <div class="resource-title">Global Perspectives Sample Guide</div>
-        <div class="resource-desc">Full A Level component breakdown — Written, Essay, Research Report structure, and what CAIE examiners expect at distinction level.</div>
-        <a class="btn-sm" href="A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a>
-      </div>
+      <div class="resource-card"><div class="resource-level">IGCSE · 0457</div><div class="resource-title">Global Perspectives Sample Guide</div><div class="resource-desc">Component codes, weightings, exam structure, and what examiners look for across Written, Individual Report, and Team Project.</div><a class="btn-sm" href="0457_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a></div>
+      <div class="resource-card"><div class="resource-level">AS Level · 9239</div><div class="resource-title">Global Perspectives Sample Guide</div><div class="resource-desc">Component codes, weightings, structure breakdowns, and examiner expectations for AS Level Written, Essay, and Group Project.</div><a class="btn-sm" href="AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a></div>
+      <div class="resource-card"><div class="resource-level">A Level · 9239</div><div class="resource-title">Global Perspectives Sample Guide</div><div class="resource-desc">Full A Level component breakdown — Written, Essay, Research Report structure, and what CAIE examiners expect at distinction level.</div><a class="btn-sm" href="A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a></div>
     </div>
-
-    <!-- Custom Pack -->
     <div style="margin-top:52px;">
       <div class="section-label">Premium Support</div>
-      <h3 style="font-family:var(--serif);font-size:1.5rem;margin-bottom:8px;color:var(--ink);">Custom Packs &amp; Personalised Guidance</h3>
+      <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;margin-bottom:8px;color:#1a1a2e;">Custom Packs &amp; Personalised Guidance</h3>
       <div class="section-rule"></div>
       <div class="pack-box">
         <div class="pack-title">What You Get in a Custom Pack</div>
@@ -756,7 +263,6 @@
   </div>
 </section>
 
-<!-- ── CONTACT ── -->
 <section id="contact">
   <div class="section-inner">
     <div class="section-label">Get in Touch</div>
@@ -764,34 +270,10 @@
     <div class="section-rule"></div>
     <div class="contact-grid">
       <div>
-        <div class="contact-method">
-          <div class="contact-icon">💬</div>
-          <div>
-            <div class="contact-label">WhatsApp</div>
-            <div class="contact-value"><a href="https://wa.me/919629427522" target="_blank">+91 96294 27522</a></div>
-          </div>
-        </div>
-        <div class="contact-method">
-          <div class="contact-icon">📧</div>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:starjomy@gmail.com">starjomy@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="contact-method">
-          <div class="contact-icon">💼</div>
-          <div>
-            <div class="contact-label">LinkedIn</div>
-            <div class="contact-value"><a href="https://www.linkedin.com/in/jomy-t-j-bb360168/" target="_blank">linkedin.com/in/jomy-t-j-bb360168</a></div>
-          </div>
-        </div>
-        <div class="contact-method">
-          <div class="contact-icon">📍</div>
-          <div>
-            <div class="contact-label">Location</div>
-            <div class="contact-value">Coimbatore, Tamil Nadu, India</div>
-          </div>
-        </div>
+        <div class="contact-method"><div class="contact-icon">💬</div><div><div class="contact-label">WhatsApp</div><div class="contact-value"><a href="https://wa.me/919629427522" target="_blank">+91 96294 27522</a></div></div></div>
+        <div class="contact-method"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:starjomy@gmail.com">starjomy@gmail.com</a></div></div></div>
+        <div class="contact-method"><div class="contact-icon">💼</div><div><div class="contact-label">LinkedIn</div><div class="contact-value"><a href="https://www.linkedin.com/in/jomy-t-j-bb360168/" target="_blank">linkedin.com/in/jomy-t-j-bb360168</a></div></div></div>
+        <div class="contact-method"><div class="contact-icon">📍</div><div><div class="contact-label">Location</div><div class="contact-value">Coimbatore, Tamil Nadu, India</div></div></div>
       </div>
       <div>
         <div class="availability">
@@ -800,14 +282,13 @@
           <div class="avail-row"><span class="avail-day">Mon – Fri (Afternoon)</span><span>1:00 – 2:00 PM</span></div>
           <div class="avail-row"><span class="avail-day">Mon – Fri (Evening)</span><span>7:00 – 8:00 PM</span></div>
           <div class="avail-row"><span class="avail-day">Weekends</span><span>4:00 – 6:00 PM</span></div>
-          <p style="font-size:.78rem;color:var(--muted);margin-top:12px;">If unavailable, please leave a WhatsApp message — I will respond when free.</p>
+          <p style="font-size:.78rem;color:#7a7a9a;margin-top:12px;">If unavailable, please leave a WhatsApp message — I will respond when free.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-links">
     <a href="https://www.linkedin.com/in/jomy-t-j-bb360168/" target="_blank">LinkedIn</a>
@@ -818,6 +299,5 @@
   <p>© 2025–2026 Jomy T J · Coimbatore, Tamil Nadu, India</p>
   <p style="margin-top:6px;font-size:.72rem;">These materials are independent educator resources and are not official Cambridge publications. Cambridge® is a registered trademark of Cambridge Assessment International Education.</p>
 </footer>
-
 </body>
 </html>
