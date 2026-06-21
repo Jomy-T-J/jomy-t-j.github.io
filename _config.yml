@@ -1,0 +1,5 @@
+include:
+  - index.html
+exclude:
+  - README.md
+theme: null
