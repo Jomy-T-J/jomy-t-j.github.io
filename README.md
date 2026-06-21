@@ -57,7 +57,7 @@ Need more than a general guide? I offer **personalised custom packs**:
 
 ## 📞 Contact
 
-- **WhatsApp:** [+91 9629427522](https://wa.me/91YOURNUMBERHERE)  
+- **WhatsApp:** [+91 9629427522](https://wa.me/919629427522)  
 - **Email:** starjomy@gmail.com   
 - **Website:** [jomy-t-j.github.io](https://jomy-t-j.github.io)
 
