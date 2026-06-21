@@ -1,3 +1,5 @@
+plugins: []
 exclude:
   - README.md
   - _config.yml
+  - "*.pdf"
