@@ -1,3 +1,2 @@
-theme: minima
-index: index.html
-exclude: ["README.md"]
+exclude:
+  - README.md
