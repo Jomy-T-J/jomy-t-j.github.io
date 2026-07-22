@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Root's Microbe Quiz — Episode 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF6EC;
+    --ink:#2B2118;
+    --soil:#3B2A1E;
+    --moss:#4F7942;
+    --moss-deep:#375530;
+    --spark:#B9E351;
+    --spark-deep:#8FBF2E;
+    --water:#1F6F78;
+    --card:#FFFDF7;
+    --line: rgba(59,42,30,0.14);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 8%, rgba(79,121,66,0.10), transparent 40%),
+      radial-gradient(circle at 90% 85%, rgba(31,111,120,0.08), transparent 45%),
+      var(--paper);
+    color:var(--ink);
+    font-family:'Nunito', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  /* ---------- Hero ---------- */
+  .eyebrow{
+    font-family:'Nunito';
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-size:12px;
+    color:var(--moss-deep);
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{content:"";width:18px;height:2px;background:var(--moss);display:inline-block;border-radius:2px;}
+  h1{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:800;
+    font-size:clamp(28px,6vw,40px);
+    margin:8px 0 6px;
+    color:var(--soil);
+    line-height:1.05;
+  }
+  .sub{
+    font-size:15.5px;
+    color:#5b4a3c;
+    max-width:52ch;
+    margin:0 0 22px;
+  }
+
+  .hero-jar{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:16px 18px;
+    margin-bottom:26px;
+  }
+  .hero-jar svg{flex:0 0 auto;}
+  .hero-jar p{margin:0;font-size:14px;color:#5b4a3c;}
+  .hero-jar strong{color:var(--soil);font-family:'Baloo 2';font-weight:700;}
+
+  /* ---------- Microbe meter ---------- */
+  .meter-shell{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:16px 18px;
+    margin-bottom:28px;
+  }
+  .meter-label{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-family:'Baloo 2';font-weight:700;color:var(--soil);font-size:14px;
+    margin-bottom:8px;
+  }
+  .meter-label span.count{color:var(--moss-deep);}
+  .meter-track{
+    position:relative;
+    height:16px;
+    background:#EFE8D6;
+    border-radius:999px;
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .meter-fill{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg, var(--spark-deep), var(--spark));
+    border-radius:999px;
+    transition:width 0.6s ease;
+  }
+
+  /* ---------- Job cards ---------- */
+  .job{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:20px 20px 22px;
+    margin-bottom:20px;
+    position:relative;
+  }
+  .job-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:'Baloo 2';
+    font-weight:700;
+    font-size:12.5px;
+    letter-spacing:0.02em;
+    color:var(--water);
+    background:rgba(31,111,120,0.09);
+    padding:4px 10px 4px 8px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  .job-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--water);}
+  .job h2{
+    font-family:'Baloo 2';
+    font-weight:700;
+    font-size:19px;
+    margin:0 0 14px;
+    color:var(--soil);
+    line-height:1.3;
+  }
+  .options{display:flex;flex-direction:column;gap:9px;}
+  .opt{
+    text-align:left;
+    font-family:'Nunito';
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink);
+    background:#F3EEE1;
+    border:1.5px solid var(--line);
+    border-radius:12px;
+    padding:11px 14px;
+    cursor:pointer;
+    transition:transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  .opt:hover{border-color:var(--moss);}
+  .opt:active{transform:scale(0.99);}
+  .opt.correct{background:rgba(185,232,109,0.55);border-color:var(--moss-deep);}
+  .opt.wrong{background:rgba(200,90,70,0.12);border-color:#C85A46;}
+  .opt[disabled]{cursor:default;}
+
+  .feedback{
+    margin-top:12px;
+    font-size:14px;
+    font-weight:600;
+    padding:10px 13px;
+    border-radius:10px;
+    display:none;
+  }
+  .feedback.show{display:block;}
+  .feedback.good{background:rgba(185,232,109,0.35);color:var(--moss-deep);}
+  .feedback.bad{background:rgba(200,90,70,0.09);color:#8C3F2E;}
+
+  /* ---------- Reflection ---------- */
+  .job.reflect .job-tag{color:var(--moss-deep);background:rgba(79,121,66,0.10);}
+  .job.reflect .job-tag .dot{background:var(--moss-deep);}
+  textarea{
+    width:100%;
+    min-height:70px;
+    font-family:'Nunito';
+    font-size:14.5px;
+    border:1.5px solid var(--line);
+    border-radius:12px;
+    padding:12px;
+    resize:vertical;
+    background:#F3EEE1;
+  }
+  .no-wrong{
+    font-size:12.5px;
+    color:var(--moss-deep);
+    font-weight:700;
+    margin-top:8px;
+    display:block;
+  }
+
+  /* ---------- Completion ---------- */
+  .done{
+    display:none;
+    background: linear-gradient(160deg, var(--moss), var(--moss-deep));
+    color:var(--paper);
+    border-radius:18px;
+    padding:26px 22px;
+    text-align:center;
+    margin-top:6px;
+  }
+  .done.show{display:block;}
+  .done h3{font-family:'Baloo 2';font-weight:800;font-size:22px;margin:6px 0 6px;}
+  .done p{margin:0;font-size:14px;opacity:0.92;}
+
+  /* ---------- Grown-ups note ---------- */
+  details{
+    margin-top:26px;
+    background:transparent;
+    border-top:1px dashed var(--line);
+    padding-top:14px;
+  }
+  summary{
+    cursor:pointer;
+    font-family:'Baloo 2';
+    font-weight:700;
+    font-size:13.5px;
+    color:var(--water);
+    letter-spacing:0.02em;
+  }
+  details p{font-size:13.5px;color:#5b4a3c;margin:10px 0 0;}
+
+  @media (prefers-reduced-motion: reduce){
+    .meter-fill{transition:none;}
+    .opt{transition:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">After you watch · Episode 1</div>
+  <h1>Dr. Root's Microbe Quiz</h1>
+  <p class="sub">Riya just found out that microbes are tiny recycling workers. Let's see what stuck. There's no failing here, only figuring things out.</p>
+
+  <div class="hero-jar">
+    <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+      <rect x="12" y="14" width="28" height="30" rx="6" fill="#F3EEE1" stroke="#3B2A1E" stroke-width="2"/>
+      <rect x="16" y="8" width="20" height="8" rx="3" fill="#4F7942" stroke="#3B2A1E" stroke-width="2"/>
+      <circle cx="20" cy="30" r="2.6" fill="#1F6F78"/>
+      <circle cx="28" cy="35" r="2.2" fill="#B9E351" stroke="#3B2A1E" stroke-width="1"/>
+      <circle cx="33" cy="27" r="2" fill="#4F7942"/>
+      <circle cx="24" cy="24" r="1.6" fill="#1F6F78"/>
+    </svg>
+    <p><strong>Meet the crew:</strong> every microbe has one job. Enzymes are their tiny tools for breaking big messes into small, simple pieces.</p>
+  </div>
+
+  <div class="meter-shell">
+    <div class="meter-label"><span>Microbe Meter</span><span class="count" id="meterCount">0 of 3 jobs figured out</span></div>
+    <div class="meter-track"><div class="meter-fill" id="meterFill"></div></div>
+  </div>
+
+  <!-- Job 1 -->
+  <div class="job" data-job="1">
+    <span class="job-tag"><span class="dot"></span>Job 1 · Remember</span>
+    <h2>What's one job a microbe does, based on the video?</h2>
+    <div class="options">
+      <button class="opt" data-correct="false">Flies to the moon to collect rocks</button>
+      <button class="opt" data-correct="true">Breaks down waste, like food scraps or dirty water</button>
+      <button class="opt" data-correct="false">Sings opera to plants so they grow faster</button>
+      <button class="opt" data-correct="false">Paints tiny pictures underwater</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Job 2 -->
+  <div class="job" data-job="2">
+    <span class="job-tag"><span class="dot"></span>Job 2 · Understand</span>
+    <h2>In your own words, what does an enzyme do?</h2>
+    <div class="options">
+      <button class="opt" data-correct="false">It's a microbe's tiny hat</button>
+      <button class="opt" data-correct="false">It helps microbes sleep at night</button>
+      <button class="opt" data-correct="true">It's a tool that breaks big, messy things into small, simple pieces</button>
+      <button class="opt" data-correct="false">It's the name of Dr. Root's lab</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Job 3 -->
+  <div class="job" data-job="3">
+    <span class="job-tag"><span class="dot"></span>Job 3 · Think it through</span>
+    <h2>Why do you think nature uses thousands of microbe specialists instead of just one "super microbe"?</h2>
+    <div class="options">
+      <button class="opt" data-correct="false">Because one super microbe would get too famous</button>
+      <button class="opt" data-correct="true">Because different messes need different jobs done, so many specialists can handle more kinds of waste</button>
+      <button class="opt" data-correct="false">Because microbes don't like sharing one job</button>
+    </div>
+    <div class="feedback"></div>
+  </div>
+
+  <!-- Reflection, unscored -->
+  <div class="job reflect" data-job="reflect">
+    <span class="job-tag"><span class="dot"></span>Your turn · Create</span>
+    <h2>Invent your own microbe worker. Give it a name and one job to do.</h2>
+    <textarea placeholder="My microbe is called ... and its job is to ..."></textarea>
+    <span class="no-wrong">There's no wrong answer here, just your own idea.</span>
+  </div>
+
+  <div class="done" id="doneCard">
+    <h3>All three jobs figured out!</h3>
+    <p>You watched, you thought it through, and you even invented your own microbe. That's exactly how Dr. Root would want it.</p>
+  </div>
+
+  <details>
+    <summary>Note for parents and teachers</summary>
+    <p>If a child answers Job 2 correctly in their own words rather than repeating "breaks big things into small pieces" verbatim, that's a strong sign the idea of an enzyme actually landed, not just the word itself. Job 3 has no single "correct" wording, it's meant to start a conversation about why specialisation exists in nature.</p>
+  </details>
+
+</div>
+
+<script>
+  const jobs = document.querySelectorAll('.job[data-job]:not(.reflect)');
+  const meterFill = document.getElementById('meterFill');
+  const meterCount = document.getElementById('meterCount');
+  const doneCard = document.getElementById('doneCard');
+  let solved = new Set();
+
+  jobs.forEach(job => {
+    const jobId = job.dataset.job;
+    const buttons = job.querySelectorAll('.opt');
+    const feedback = job.querySelector('.feedback');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isCorrect = btn.dataset.correct === 'true';
+
+        if (isCorrect) {
+          buttons.forEach(b => b.setAttribute('disabled', 'true'));
+          btn.classList.add('correct');
+          feedback.textContent = jobId === '1'
+            ? "That's right. Microbes are nature's clean-up crew."
+            : jobId === '2'
+            ? "Exactly. Enzymes are the tool, the microbe is the worker."
+            : "Nice thinking. Lots of specialists means lots of different messes get handled well.";
+          feedback.className = 'feedback good show';
+
+          if (!solved.has(jobId)) {
+            solved.add(jobId);
+            updateMeter();
+          }
+        } else {
+          btn.classList.add('wrong');
+          feedback.textContent = "Not quite, give it another look and try again.";
+          feedback.className = 'feedback bad show';
+          setTimeout(() => btn.classList.remove('wrong'), 700);
+        }
+      });
+    });
+  });
+
+  function updateMeter() {
+    const total = 3;
+    const done = solved.size;
+    meterFill.style.width = (done / total * 100) + '%';
+    meterCount.textContent = done + ' of ' + total + ' jobs figured out';
+    if (done === total) {
+      doneCard.classList.add('show');
+    }
+  }
+</script>
+</body>
+</html>
