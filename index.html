@@ -1,754 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta name="description" content="Jomy T J – CAIE Approved Examiner, Cambridge Global Perspectives Specialist, Sustainability Educator, Peace Advocate, and Published Researcher." />
-  <meta property="og:title" content="Jomy T J | Cambridge Educator & Academic Leader" />
-  <meta property="og:description" content="CAIE Approved Examiner | National Top Rank Mentor | Cambridge Global Perspectives Specialist" />
-  <meta property="og:url" content="https://jomy-t-j.github.io" />
-  <title>Jomy T J | Cambridge Educator & Academic Leader</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    html,body,div,span,h1,h2,h3,h4,p,a,ul,li,nav,section,footer,header{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}
-    *,*::before,*::after{box-sizing:border-box;}
-    html{scroll-behavior:smooth;}
-    body{font-family:'Inter',system-ui,sans-serif !important;font-size:16px !important;line-height:1.7 !important;color:#1a1a2e !important;background:#fafafa !important;}
-    a{text-decoration:none;color:inherit;}
-    ul{list-style:none;}
-
-    /* NAV */
-    nav{position:sticky !important;top:0 !important;z-index:100 !important;background:#003b5c !important;padding:0 24px !important;display:flex !important;align-items:center !important;justify-content:space-between !important;height:56px !important;}
-    .nav-brand{font-family:'Playfair Display',Georgia,serif !important;font-size:1.05rem !important;color:#fff !important;letter-spacing:.03em !important;}
-    .nav-links{display:flex !important;gap:24px !important;list-style:none !important;}
-    .nav-links a{color:rgba(255,255,255,.82) !important;font-size:.78rem !important;font-weight:600 !important;letter-spacing:.07em !important;text-transform:uppercase !important;transition:color .2s !important;}
-    .nav-links a:hover{color:#f5e9c8 !important;}
-    .nav-cta{background:#b8860b !important;color:#fff !important;padding:7px 16px !important;border-radius:4px !important;font-size:.75rem !important;font-weight:700 !important;letter-spacing:.05em !important;text-transform:uppercase !important;}
-    .nav-cta:hover{background:#a07609 !important;}
-
-    /* HERO */
-    .hero{background:#003b5c !important;color:#fff !important;padding:88px 24px 80px !important;text-align:center !important;position:relative !important;overflow:hidden !important;}
-    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 65% 0%,rgba(184,134,11,.2) 0%,transparent 60%);pointer-events:none;}
-    .hero-eyebrow{display:inline-flex !important;align-items:center !important;gap:8px !important;font-size:.72rem !important;font-weight:700 !important;letter-spacing:.14em !important;text-transform:uppercase !important;color:#f5e9c8 !important;border:1px solid rgba(245,233,200,.3) !important;border-radius:20px !important;padding:5px 18px !important;margin-bottom:28px !important;}
-    .hero h1{font-family:'Playfair Display',Georgia,serif !important;font-size:clamp(2.4rem,5vw,3.6rem) !important;line-height:1.12 !important;margin-bottom:12px !important;color:#ffffff !important;letter-spacing:-.02em !important;text-shadow:none !important;}
-    .hero-sub{font-size:clamp(.95rem,2vw,1.1rem) !important;color:rgba(255,255,255,.75) !important;max-width:580px !important;margin:0 auto 32px !important;font-weight:300 !important;}
-    .hero-badges{display:flex !important;flex-wrap:wrap !important;gap:8px !important;justify-content:center !important;margin-bottom:36px !important;}
-    .badge{background:rgba(255,255,255,.09) !important;border:1px solid rgba(255,255,255,.2) !important;border-radius:20px !important;padding:5px 14px !important;font-size:.76rem !important;font-weight:500 !important;color:rgba(255,255,255,.9) !important;white-space:nowrap !important;}
-    .badge.gold{background:rgba(184,134,11,.22) !important;border-color:#b8860b !important;color:#f5e9c8 !important;}
-    .hero-cta{display:flex !important;gap:12px !important;justify-content:center !important;flex-wrap:wrap !important;}
-    .btn{display:inline-block !important;padding:12px 26px !important;border-radius:6px !important;font-size:.86rem !important;font-weight:600 !important;transition:all .2s !important;cursor:pointer !important;border:none !important;}
-    .btn-primary{background:#b8860b !important;color:#1a1a2e !important;}
-    .btn-primary:hover{background:#a07609 !important;transform:translateY(-1px) !important;}
-    .btn-outline{background:transparent !important;border:1.5px solid rgba(255,255,255,.45) !important;color:#fff !important;}
-    .btn-outline:hover{border-color:#fff !important;}
-
-    /* STATS STRIP */
-    .stats-strip{background:#b8860b !important;padding:0 24px !important;}
-    .stats-inner{max-width:1000px !important;margin:0 auto !important;display:grid !important;grid-template-columns:repeat(6,1fr) !important;gap:0 !important;}
-    .stat-item{padding:18px 8px !important;text-align:center !important;border-right:1px solid rgba(255,255,255,.2) !important;}
-    .stat-item:last-child{border-right:none !important;}
-    .stat-num{display:block !important;font-size:1.4rem !important;font-weight:700 !important;color:#1a1a2e !important;font-family:'Playfair Display',Georgia,serif !important;line-height:1 !important;margin-bottom:3px !important;}
-    .stat-label{font-size:.68rem !important;font-weight:600 !important;color:rgba(26,26,46,.75) !important;text-transform:uppercase !important;letter-spacing:.06em !important;}
-
-    /* SECTIONS */
-    section{padding:80px 24px !important;}
-    section:nth-child(even){background:#ffffff !important;}
-    .section-inner{max-width:960px !important;margin:0 auto !important;}
-    .section-label{font-size:.7rem !important;font-weight:700 !important;letter-spacing:.15em !important;text-transform:uppercase !important;color:#b8860b !important;margin-bottom:6px !important;}
-    .section-title{font-family:'Playfair Display',Georgia,serif !important;font-size:clamp(1.7rem,3vw,2.2rem) !important;color:#1a1a2e !important;margin-bottom:14px !important;line-height:1.2 !important;}
-    .section-rule{width:48px !important;height:3px !important;background:#b8860b !important;margin-bottom:36px !important;border-radius:2px !important;}
-
-    /* ABOUT */
-    .about-grid{display:grid !important;grid-template-columns:280px 1fr !important;gap:48px !important;align-items:start !important;}
-    .about-photo-wrap{text-align:center !important;}
-    .about-photo{width:180px !important;height:180px !important;border-radius:50% !important;object-fit:cover !important;border:4px solid #b8860b !important;margin-bottom:20px !important;}
-    .about-name-card{background:#003b5c !important;border-radius:10px !important;padding:16px !important;text-align:center !important;}
-    .about-name-card strong{display:block !important;color:#fff !important;font-size:.95rem !important;font-family:'Playfair Display',Georgia,serif !important;margin-bottom:4px !important;}
-    .about-name-card span{color:#b8860b !important;font-size:.75rem !important;font-weight:600 !important;}
-    .about-text p{color:#4a4a6a !important;margin-bottom:16px !important;font-size:.95rem !important;line-height:1.8 !important;}
-    .about-text p:last-child{margin-bottom:0 !important;}
-    .cred-list{list-style:none !important;margin-top:24px !important;}
-    .cred-item{display:flex !important;gap:12px !important;align-items:flex-start !important;padding:11px 0 !important;border-bottom:1px solid #e2e2ee !important;}
-    .cred-item:last-child{border-bottom:none !important;}
-    .cred-icon{width:30px !important;height:30px !important;background:#e6eff5 !important;border-radius:50% !important;display:flex !important;align-items:center !important;justify-content:center !important;font-size:.9rem !important;flex-shrink:0 !important;margin-top:2px !important;}
-    .cred-text strong{display:block !important;color:#1a1a2e !important;font-size:.86rem !important;font-weight:600 !important;}
-    .cred-text span{color:#7a7a9a !important;font-size:.8rem !important;}
-
-    /* EXPERIENCE */
-    .exp-grid{display:flex !important;flex-direction:column !important;gap:0 !important;}
-    .exp-item{display:grid !important;grid-template-columns:180px 1fr !important;gap:0 !important;position:relative !important;}
-    .exp-item::before{content:'';position:absolute;left:180px;top:0;bottom:0;width:1px;background:#e2e2ee;}
-    .exp-left{padding:24px 24px 24px 0 !important;text-align:right !important;}
-    .exp-date{font-size:.76rem !important;font-weight:700 !important;color:#003b5c !important;text-transform:uppercase !important;letter-spacing:.05em !important;margin-bottom:4px !important;}
-    .exp-org{font-size:.78rem !important;color:#7a7a9a !important;line-height:1.4 !important;}
-    .exp-dot{position:absolute !important;left:172px !important;top:26px !important;width:17px !important;height:17px !important;border-radius:50% !important;background:#003b5c !important;border:3px solid #fff !important;box-shadow:0 0 0 2px #003b5c !important;}
-    .exp-dot.gold{background:#b8860b !important;box-shadow:0 0 0 2px #b8860b !important;}
-    .exp-right{padding:24px 0 24px 32px !important;}
-    .exp-title{font-weight:700 !important;font-size:.98rem !important;color:#1a1a2e !important;margin-bottom:4px !important;}
-    .exp-desc{font-size:.86rem !important;color:#4a4a6a !important;margin-bottom:10px !important;line-height:1.65 !important;}
-    .exp-bullets{margin-bottom:10px !important;}
-    .exp-bullets li{font-size:.83rem !important;color:#4a4a6a !important;padding:3px 0 !important;padding-left:14px !important;position:relative !important;}
-    .exp-bullets li::before{content:'→';position:absolute;left:0;color:#b8860b;font-size:.75rem;}
-    .exp-impact{background:#e6eff5 !important;border-radius:6px !important;padding:10px 14px !important;margin-bottom:10px !important;}
-    .exp-impact-title{font-size:.7rem !important;font-weight:700 !important;text-transform:uppercase !important;letter-spacing:.08em !important;color:#003b5c !important;margin-bottom:6px !important;}
-    .exp-impact li{font-size:.82rem !important;color:#003b5c !important;padding:2px 0 !important;padding-left:14px !important;position:relative !important;font-weight:500 !important;}
-    .exp-impact li::before{content:'✓';position:absolute;left:0;color:#b8860b;font-size:.75rem;}
-    .exp-tags{display:flex !important;flex-wrap:wrap !important;gap:6px !important;}
-    .exp-tag{background:#f5e9c8 !important;color:#b8860b !important;font-size:.68rem !important;font-weight:700 !important;padding:3px 10px !important;border-radius:12px !important;border:1px solid rgba(184,134,11,.25) !important;}
-    .exp-tag.blue{background:#e6eff5 !important;color:#003b5c !important;border-color:rgba(0,59,92,.2) !important;}
-
-    /* IMPACT NUMBERS */
-    .impact-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) !important;gap:20px !important;}
-    .impact-card{background:#fff !important;border:1px solid #e2e2ee !important;border-radius:10px !important;padding:28px 20px !important;text-align:center !important;transition:box-shadow .2s !important;}
-    .impact-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.08) !important;border-color:#003b5c !important;}
-    .impact-num{font-family:'Playfair Display',Georgia,serif !important;font-size:2.2rem !important;font-weight:700 !important;color:#003b5c !important;line-height:1 !important;margin-bottom:6px !important;}
-    .impact-desc{font-size:.82rem !important;color:#4a4a6a !important;line-height:1.5 !important;}
-    .impact-label{font-size:.68rem !important;font-weight:700 !important;text-transform:uppercase !important;letter-spacing:.08em !important;color:#b8860b !important;margin-bottom:4px !important;}
-
-    /* EXPERTISE CARDS */
-    .cards-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(250px,1fr)) !important;gap:20px !important;}
-    .card{background:#fff !important;border:1px solid #e2e2ee !important;border-radius:10px !important;padding:26px !important;transition:all .2s !important;}
-    .card:hover{box-shadow:0 6px 24px rgba(0,0,0,.08) !important;border-color:#003b5c !important;transform:translateY(-2px) !important;}
-    .card-icon{font-size:1.8rem !important;margin-bottom:14px !important;}
-    .card-title{font-weight:700 !important;font-size:.95rem !important;color:#1a1a2e !important;margin-bottom:8px !important;}
-    .card-desc{font-size:.84rem !important;color:#4a4a6a !important;line-height:1.65 !important;}
-
-    /* PUBLICATIONS */
-    .pub-item{border-left:3px solid #003b5c !important;padding:12px 0 12px 20px !important;margin-bottom:22px !important;transition:border-color .2s !important;}
-    .pub-item:hover{border-color:#b8860b !important;}
-    .pub-item:last-child{margin-bottom:0 !important;}
-    .pub-type{font-size:.67rem !important;font-weight:700 !important;letter-spacing:.1em !important;text-transform:uppercase !important;color:#003b5c !important;margin-bottom:4px !important;}
-    .pub-title{font-size:.92rem !important;font-weight:600 !important;color:#1a1a2e !important;margin-bottom:4px !important;}
-    .pub-title a{color:#1a1a2e !important;}
-    .pub-title a:hover{color:#003b5c !important;text-decoration:underline !important;}
-    .pub-meta{font-size:.8rem !important;color:#7a7a9a !important;}
-
-    /* WRITING GRID */
-    .writing-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(260px,1fr)) !important;gap:16px !important;}
-    .writing-card{background:#fff !important;border:1px solid #e2e2ee !important;border-radius:8px !important;padding:18px !important;transition:all .2s !important;display:block !important;}
-    .writing-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08) !important;border-color:#003b5c !important;}
-    .writing-tag{font-size:.67rem !important;font-weight:700 !important;text-transform:uppercase !important;letter-spacing:.08em !important;color:#b8860b !important;margin-bottom:8px !important;}
-    .writing-title{font-size:.9rem !important;font-weight:600 !important;color:#1a1a2e !important;margin-bottom:6px !important;line-height:1.45 !important;}
-    .writing-meta{font-size:.78rem !important;color:#7a7a9a !important;}
-
-    /* RESOURCES */
-    .resources-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(260px,1fr)) !important;gap:20px !important;}
-    .resource-card{background:#e6eff5 !important;border:1px solid rgba(0,59,92,.12) !important;border-radius:10px !important;padding:26px !important;display:flex !important;flex-direction:column !important;gap:10px !important;}
-    .resource-level{font-size:.67rem !important;font-weight:700 !important;letter-spacing:.1em !important;text-transform:uppercase !important;color:#003b5c !important;}
-    .resource-title{font-weight:700 !important;font-size:1rem !important;color:#1a1a2e !important;}
-    .resource-desc{font-size:.83rem !important;color:#4a4a6a !important;flex:1 !important;}
-    .btn-sm{display:inline-block !important;padding:9px 18px !important;background:#003b5c !important;color:#fff !important;border-radius:6px !important;font-size:.8rem !important;font-weight:600 !important;text-align:center !important;transition:background .2s !important;}
-    .btn-sm:hover{background:#002840 !important;}
-
-    /* PACK BOX */
-    .pack-box{background:#fff !important;border:1.5px solid #b8860b !important;border-radius:10px !important;padding:36px !important;max-width:580px !important;margin:0 auto !important;}
-    .pack-title{font-family:'Playfair Display',Georgia,serif !important;font-size:1.4rem !important;margin-bottom:14px !important;color:#1a1a2e !important;}
-    .pack-list{list-style:none !important;margin-bottom:22px !important;}
-    .pack-list li{padding:7px 0 !important;font-size:.9rem !important;color:#4a4a6a !important;border-bottom:1px solid #e2e2ee !important;display:flex !important;gap:10px !important;}
-    .pack-list li::before{content:'✓';color:#b8860b;font-weight:700;flex-shrink:0;}
-    .step-row{display:flex !important;gap:12px !important;align-items:flex-start !important;margin-bottom:10px !important;font-size:.87rem !important;color:#4a4a6a !important;}
-    .step-num{width:24px !important;height:24px !important;border-radius:50% !important;background:#003b5c !important;color:#fff !important;display:flex !important;align-items:center !important;justify-content:center !important;font-size:.72rem !important;font-weight:700 !important;flex-shrink:0 !important;}
-
-    /* COURSE */
-    .course-dark{background:#1a1a2e !important;}
-    .module-grid{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(220px,1fr)) !important;gap:14px !important;margin-bottom:32px !important;}
-    .module-card{background:rgba(255,255,255,.06) !important;border:1px solid rgba(255,255,255,.1) !important;border-radius:8px !important;padding:18px !important;}
-    .module-num{font-size:.67rem !important;font-weight:700 !important;letter-spacing:.1em !important;text-transform:uppercase !important;color:#b8860b !important;margin-bottom:6px !important;}
-    .module-title{font-size:.88rem !important;font-weight:600 !important;color:#fff !important;}
-    .module-sdg{font-size:.72rem !important;color:#7a9acc !important;margin-top:4px !important;}
-
-    /* CONTACT */
-    .contact-grid{display:grid !important;grid-template-columns:1fr 1fr !important;gap:40px !important;align-items:start !important;}
-    .contact-method{display:flex !important;gap:14px !important;align-items:flex-start !important;margin-bottom:22px !important;}
-    .contact-icon{width:42px !important;height:42px !important;background:#e6eff5 !important;border-radius:50% !important;display:flex !important;align-items:center !important;justify-content:center !important;font-size:1.1rem !important;flex-shrink:0 !important;}
-    .contact-label{font-size:.72rem !important;color:#7a7a9a !important;text-transform:uppercase !important;letter-spacing:.08em !important;margin-bottom:2px !important;}
-    .contact-value{font-size:.92rem !important;font-weight:500 !important;color:#1a1a2e !important;}
-    .contact-value a{color:#003b5c !important;}
-    .availability{background:#e6eff5 !important;border-radius:10px !important;padding:22px !important;}
-    .avail-title{font-weight:600 !important;font-size:.88rem !important;margin-bottom:14px !important;color:#003b5c !important;}
-    .avail-row{display:flex !important;justify-content:space-between !important;font-size:.82rem !important;color:#4a4a6a !important;padding:5px 0 !important;border-bottom:1px solid rgba(0,59,92,.08) !important;}
-    .avail-row:last-child{border-bottom:none !important;}
-    .avail-day{font-weight:500 !important;color:#1a1a2e !important;}
-
-    /* FOOTER */
-    footer{background:#1a1a2e !important;color:rgba(255,255,255,.55) !important;text-align:center !important;padding:36px 24px !important;font-size:.8rem !important;}
-    footer a{color:rgba(255,255,255,.75) !important;}
-    footer a:hover{color:#f5e9c8 !important;}
-    .footer-links{display:flex !important;gap:24px !important;justify-content:center !important;margin-bottom:14px !important;flex-wrap:wrap !important;}
-
-    /* RESPONSIVE */
-    @media(max-width:768px){
-      .about-grid{grid-template-columns:1fr !important;}
-      .contact-grid{grid-template-columns:1fr !important;}
-      .stats-inner{grid-template-columns:repeat(3,1fr) !important;}
-      .exp-item{grid-template-columns:1fr !important;}
-      .exp-item::before{display:none !important;}
-      .exp-left{text-align:left !important;padding:16px 0 0 !important;}
-      .exp-right{padding:8px 0 24px !important;}
-      .exp-dot{display:none !important;}
-      section{padding:56px 16px !important;}
-      .nav-links{gap:14px !important;}
-      .nav-links a{font-size:.7rem !important;}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jomy T J | Cambridge Global Perspectives Specialist & CAIE Examiner</title>
+<meta name="description" content="CAIE Approved Examiner, Cambridge Global Perspectives Specialist, Sustainability Educator, Peace Advocate, and Published Researcher.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a class="nav-brand" href="#top">Jomy T J</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#impact">Impact</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#writing">Writing</a></li>
-    <li><a href="#resources">Resources</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="top" style="background:#003b5c !important;color:#ffffff !important;padding:88px 24px 80px !important;text-align:center !important;position:relative !important;overflow:hidden !important;">
-  <div style="display:inline-flex !important;align-items:center !important;gap:8px !important;font-size:.72rem !important;font-weight:700 !important;letter-spacing:.14em !important;text-transform:uppercase !important;color:#f5e9c8 !important;border:1px solid rgba(245,233,200,.3) !important;border-radius:20px !important;padding:5px 18px !important;margin-bottom:28px !important;">📜 CAIE Approved Examiner · AS & A Level · 2026</div>
-  <h1 style="font-family:'Playfair Display',Georgia,serif !important;font-size:clamp(2.4rem,5vw,3.6rem) !important;color:#ffffff !important;margin-bottom:12px !important;line-height:1.12 !important;">Jomy T J</h1>
-  <p style="font-size:clamp(.95rem,2vw,1.1rem) !important;color:rgba(255,255,255,.82) !important;max-width:580px !important;margin:0 auto 32px !important;font-weight:300 !important;">Cambridge Global Perspectives Specialist · IGCSE & AS/A Level · Sustainability Educator · Peace Advocate · Published Researcher</p>
-  <div style="display:flex !important;flex-wrap:wrap !important;gap:8px !important;justify-content:center !important;margin-bottom:36px !important;">
-    <span class="badge gold">🏆 National Top Rank — IGCSE GP (Jan 2025)</span>
-    <span class="badge">CAIE Approved Examiner 2026</span>
-    <span class="badge">8+ Years Cambridge Experience</span>
-    <span class="badge">M.Sc. Biotechnology</span>
-    <span class="badge">Published Researcher · IJLS 2018</span>
+<div class="texture"></div>
+<header class="site">
+  <a class="brand" href="index.html">
+    <svg class="compass" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="46" stroke="#C9A24B" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="3" fill="#C9A24B"/>
+      <path d="M50 8 L56 46 L50 50 L44 46 Z" fill="#C9A24B"/>
+      <path d="M50 92 L44 54 L50 50 L56 54 Z" fill="#8FAE9A"/>
+      <path d="M8 50 L46 44 L50 50 L46 56 Z" fill="#F1EAD6" opacity="0.5"/>
+      <path d="M92 50 L54 56 L50 50 L54 44 Z" fill="#F1EAD6" opacity="0.5"/>
+      <text x="50" y="20" text-anchor="middle" font-size="7" fill="#F1EAD6" font-family="IBM Plex Mono, monospace">N</text>
+    </svg>
+    <div>
+      <p class="eyebrow">Professional Portfolio · 2026&ndash;27</p>
+      <h1>Jomy T J</h1>
+    </div>
+  </a>
+  <div class="header-cta">
+    <a class="btn btn-ghost" href="contact.html">Work With Me</a>
+    <a class="btn btn-brass" href="Jomy_TJ_Master_CV.pdf">&darr; Download CV</a>
   </div>
-  <div style="display:flex !important;gap:12px !important;justify-content:center !important;flex-wrap:wrap !important;">
-    <a class="btn btn-primary" href="#resources">Free Study Resources</a>
-    <a class="btn btn-outline" href="#contact">Work With Me</a>
-    <a class="btn btn-outline" href="Jomy_TJ_Master_CV.pdf" target="_blank" download>⬇ Download CV</a>
-  </div>
-</section>
+</header>
 
-<!-- STATS STRIP -->
-<div class="stats-strip">
-  <div class="stats-inner">
-    <div class="stat-item"><span class="stat-num">120+</span><span class="stat-label">Learners per cycle</span></div>
-    <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">PCR graduates trained</span></div>
-    <div class="stat-item"><span class="stat-num">40+</span><span class="stat-label">Peace educators trained</span></div>
-    <div class="stat-item"><span class="stat-num">1250+</span><span class="stat-label">SHGs impacted</span></div>
-    <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">Published articles</span></div>
-    <div class="stat-item"><span class="stat-num">8+</span><span class="stat-label">Years experience</span></div>
+<div class="nav-wrap">
+  <p class="nav-label">&mdash; Navigate the Profile &mdash;</p>
+  <div class="route">
+    <div class="route-line"></div>
+    <a class="stop active" href="index.html"><span class="dot"></span><span class="glabel">Home</span></a>
+    <a class="stop" href="experience.html"><span class="dot"></span><span class="glabel">Experience</span></a>
+    <a class="stop" href="skills.html"><span class="dot"></span><span class="glabel">Expertise</span></a>
+    <a class="stop" href="education.html"><span class="dot"></span><span class="glabel">Education</span></a>
+    <a class="stop" href="certifications.html"><span class="dot"></span><span class="glabel">Credentials</span></a>
+    <a class="stop" href="achievements.html"><span class="dot"></span><span class="glabel">Achievements</span></a>
+    <a class="stop" href="writing.html"><span class="dot"></span><span class="glabel">Writing</span></a>
+    <a class="stop" href="resources.html"><span class="dot"></span><span class="glabel">Resources</span></a>
+    <a class="stop" href="contact.html"><span class="dot"></span><span class="glabel">Contact</span></a>
+  </div>
+</div>
+<main>
+
+<p class="tagline">Cambridge Global Perspectives &amp; Research specialist and CAIE Approved Examiner &mdash; teaching, curriculum development, and thought leadership in sustainability and peace education. <b>Based in Coimbatore, India &middot; open to relocation worldwide.</b></p>
+
+<div class="stat-grid">
+  <div class="stat"><div class="num">120+</div><div class="lbl">LEARNERS / CYCLE</div></div>
+  <div class="stat"><div class="num">500+</div><div class="lbl">PCR GRADUATES TRAINED</div></div>
+  <div class="stat"><div class="num">40+</div><div class="lbl">PEACE EDUCATORS TRAINED</div></div>
+  <div class="stat"><div class="num">1250+</div><div class="lbl">SHGs IMPACTED</div></div>
+  <div class="stat"><div class="num">14</div><div class="lbl">PUBLISHED ARTICLES</div></div>
+  <div class="stat"><div class="num">8+</div><div class="lbl">YEARS EXPERIENCE</div></div>
+</div>
+
+<div class="panel-head">
+  <div>
+    <p class="subtitle">Who I am</p>
+    <h2>Cambridge educator &amp; academic leader</h2>
+    <p class="quote">In January 2025, one of my IGCSE Global Perspectives students was declared National Top Rank in India, with others securing A* grades from the November 2024 series. My next cohort recorded the highest number of Cambridge Gold Awards in Lower Secondary Checkpoint Global Perspectives, announced August 2025.</p>
+  </div>
+  <div class="aims-card">
+    <span class="k">At a glance</span>
+    <ul>
+      <li>CAIE Approved Examiner &mdash; AS &amp; A Level Global Perspectives &amp; Research (9239)</li>
+      <li>8+ years teaching Cambridge IGCSE, AS &amp; A Level and CBSE</li>
+      <li>M.Sc. Biotechnology &middot; published researcher (IJLS, 2018)</li>
+      <li>Sustainability, peace education &amp; global citizenship practitioner</li>
+    </ul>
   </div>
 </div>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="section-label">Who I Am</div>
-    <h2 class="section-title">Cambridge Educator & Academic Leader</h2>
-    <div class="section-rule"></div>
-    <div class="about-grid">
-      <div class="about-photo-wrap">
-        <img src="jomy_profile.jpg" alt="Jomy T J" class="about-photo" onerror="this.style.display='none'" />
-        <div class="about-name-card">
-          <strong>Jomy T J</strong>
-          <span>CAIE Approved Examiner · 2026</span>
-        </div>
-      </div>
-      <div class="about-text">
-        <p>In January 2025, one of my IGCSE Global Perspectives students was declared National Top Rank in India, with others securing A* results from the November 2024 examination series. My next cohort recorded the highest number of Cambridge Gold Awards in Lower Secondary Checkpoint Global Perspectives when results were declared in August 2025.</p>
-        <p>That is what eight years of practically diverse experience, with a focused commitment to Cambridge curriculum work, looks like in practice.</p>
-        <p>I am a CAIE Approved Examiner for AS and A Level Global Perspectives and Research (2026) and a Cambridge-experienced educator who has delivered IGCSE and AS & A Level Global Perspectives & Research, and Biology at international schools. I hold an M.Sc. in Biotechnology and have co-authored a peer-reviewed study on cardiovascular disease risk (IJLS, 2018).</p>
-        <p>Beyond teaching, I am developing <strong>Rolling Through the Odds</strong> — a 6-module, SDG-aligned sustainability course for corporates and sustainability platforms — and serve as a Career Mentor through the Global Mentorship Initiative internationally.</p>
-        <ul class="cred-list">
-          <li class="cred-item"><div class="cred-icon">📜</div><div class="cred-text"><strong>CAIE Approved Examiner</strong><span>AS & A Level Global Perspectives & Research · Cambridge · 2026</span></div></li>
-          <li class="cred-item"><div class="cred-icon">🏆</div><div class="cred-text"><strong>National Top Rank Mentor</strong><span>IGCSE Global Perspectives · CAIE India · January 2025</span></div></li>
-          <li class="cred-item"><div class="cred-icon">🔬</div><div class="cred-text"><strong>Published Researcher</strong><span>Molecular Biology · Int. Journal of Life Sciences · 2018</span></div></li>
-          <li class="cred-item"><div class="cred-icon">🕊️</div><div class="cred-text"><strong>Certified Peace Instructor</strong><span>IWPG · Geneva Peace Week Participant · 40+ educators trained</span></div></li>
-          <li class="cred-item"><div class="cred-icon">🎓</div><div class="cred-text"><strong>M.Sc. Biotechnology</strong><span>Kongunadu Arts & Science College · 2015</span></div></li>
-          <li class="cred-item"><div class="cred-icon">🌱</div><div class="cred-text"><strong>Climate & Sustainability Certified</strong><span>EDF · UNSSC/UNEP · Siemens · 2025</span></div></li>
-          <li class="cred-item"><div class="cred-icon">📚</div><div class="cred-text"><strong>PDQ 5881 — In Progress</strong><span>Cambridge International Certificate in Teaching and Learning</span></div></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<p class="section-label">&mdash; Explore the profile &mdash;</p>
+<div class="card-grid">
+  <a class="card" href="experience.html" style="text-decoration:none;"><div class="icon">01</div><h4>Experience</h4><p>Full career journey &mdash; CAIE examiner, Cambridge coordination, M&amp;E, peace education and more.</p></a>
+  <a class="card" href="certifications.html" style="text-decoration:none;"><div class="icon">02</div><h4>Credentials</h4><p>Examiner status, safeguarding, sustainability and mentorship certifications &mdash; verified.</p></a>
+  <a class="card" href="writing.html" style="text-decoration:none;"><div class="icon">03</div><h4>Writing</h4><p>Published research, 14 education articles, and an ongoing thought-leadership essay series.</p></a>
+</div>
 
-<!-- IMPACT NUMBERS -->
-<section id="impact" style="background:#ffffff !important;">
-  <div class="section-inner">
-    <div class="section-label">Measurable Outcomes</div>
-    <h2 class="section-title">Impact by the Numbers</h2>
-    <div class="section-rule"></div>
-    <div class="impact-grid">
-      <div class="impact-card">
-        <div class="impact-label">Cambridge Achievement</div>
-        <div class="impact-num">🏆 #1</div>
-        <div class="impact-desc">National Top Rank — IGCSE Global Perspectives, CAIE India (results declared January 2025)</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Cambridge Achievement</div>
-        <div class="impact-num">A*</div>
-        <div class="impact-desc">Multiple A* grades guided across Cambridge IGCSE international examinations (2024–2025)</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Cambridge Achievement</div>
-        <div class="impact-num">🥇</div>
-        <div class="impact-desc">Highest Gold Award count — Lower Secondary Checkpoint GP (results declared August 2025)</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Classroom Reach</div>
-        <div class="impact-num">120+</div>
-        <div class="impact-desc">IGCSE and Checkpoint learners per delivery cycle at The Indian Public School, Cambridge</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Freelance Reach</div>
-        <div class="impact-num">15+</div>
-        <div class="impact-desc">Personalised CAIE and CBSE learners per cycle across online and in-person teaching</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Biotech Training</div>
-        <div class="impact-num">300+</div>
-        <div class="impact-desc">Final-year allied health graduates trained in PCR techniques — Naan Mudhalvan Scheme, Tamil Nadu Government</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Peace Education</div>
-        <div class="impact-num">40+</div>
-        <div class="impact-desc">Professionals trained as peace educators across South Asia, Africa, and South Korea — IWPG Global Region 3</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Women Empowerment</div>
-        <div class="impact-num">1250+</div>
-        <div class="impact-desc">SHGs reached through women's socio-economic and political empowerment programmes — GSHEC, KKS-BMZ Germany</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Communication Skills</div>
-        <div class="impact-num">5+</div>
-        <div class="impact-desc">Learners per batch in public speaking and communication skills development — PlanetSpark Remote</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Multidisciplinary</div>
-        <div class="impact-num">40+</div>
-        <div class="impact-desc">Learners across grades taught Science, English, Math, and Global Studies — Aalam International School</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">Primary Education</div>
-        <div class="impact-num">15+</div>
-        <div class="impact-desc">Primary learners supported in science and homeroom sessions — The Hillside PREP, Coimbatore</div>
-      </div>
-      <div class="impact-card">
-        <div class="impact-label">CBSE Reach</div>
-        <div class="impact-num">500+</div>
-        <div class="impact-desc">Grades 6–12 Biology learners taught at Shemford Senior Secondary School — successful 2019 Board batch</div>
-      </div>
-    </div>
-  </div>
-</section>
+<p class="section-label">&mdash; Currently &mdash;</p>
+<div class="card-grid">
+  <div class="card"><div class="icon">&#128220;</div><h4>Rolling Through the Odds</h4><p>Developing a 6-module, SDG-aligned sustainability course for corporate and platform partners &mdash; version-controlled on GitHub.</p><span class="tag">Sustainability</span></div>
+  <div class="card"><div class="icon">&#127891;</div><h4>PDQ 5881</h4><p>Completing the Cambridge International Certificate in Teaching and Learning.</p><span class="tag">In progress</span></div>
+  <div class="card"><div class="icon">&#129309;</div><h4>Mentor, English Program</h4><p>Career mentorship for early-career professionals through the Global Mentorship Initiative.</p><span class="tag">Mentorship</span></div>
+</div>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-inner">
-    <div class="section-label">Career Journey</div>
-    <h2 class="section-title">Experience & Leadership</h2>
-    <div class="section-rule"></div>
-    <div class="exp-grid">
+</main>
 
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">May 2026 – Present</div>
-          <div class="exp-org">Cambridge University Press & Assessment · Remote</div>
-        </div>
-        <div class="exp-dot gold"></div>
-        <div class="exp-right">
-          <div class="exp-title">CAIE Approved Examiner — AS & A Level Global Perspectives & Research</div>
-          <div class="exp-desc">Assessing AS & A Level Global Perspectives & Research scripts under internationally recognised Cambridge Assessment frameworks, applying standardised marking criteria.</div>
-          <div class="exp-tags"><span class="exp-tag">CAIE Examiner</span><span class="exp-tag blue">Assessment Specialist</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Jun 2026 – Present</div>
-          <div class="exp-org">Global Mentorship Initiative · Freelance · International</div>
-        </div>
-        <div class="exp-dot gold"></div>
-        <div class="exp-right">
-          <div class="exp-title">Career Mentor — International Mentorship Programme</div>
-          <div class="exp-desc">Providing structured one-to-one career mentorship to early-career professionals and consultants across international contexts — part of a global peer mentorship network.</div>
-          <div class="exp-tags"><span class="exp-tag blue">Mentorship</span><span class="exp-tag blue">Professional Development</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Jul 2024 – May 2025</div>
-          <div class="exp-org">The Indian Public School (Cambridge), Erode, Tamil Nadu</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Cambridge Global Perspectives Facilitator & Coursework Moderator</div>
-          <div class="exp-desc">Delivered IGCSE GP and Lower Secondary Checkpoint curriculum to 120+ learners per cycle. Led internal coursework moderation and assessment standardisation in alignment with CAIE requirements.</div>
-          <ul class="exp-bullets">
-            <li>Delivered IGCSE GP and Lower Secondary Checkpoint to 120+ learners per cycle</li>
-            <li>Moderated student coursework per CAIE standards, maintaining 100% compliance</li>
-            <li>Designed inquiry-based learning modules strengthening research and critical thinking</li>
-            <li>Mentored students in project work, extended essays, and independent research</li>
-            <li>Trained successor teacher with comprehensive curriculum handover</li>
-          </ul>
-          <div class="exp-impact">
-            <div class="exp-impact-title">Key Outcomes</div>
-            <ul class="exp-impact">
-              <li>National Top Rank — IGCSE Global Perspectives, CAIE India (results declared January 2025)</li>
-              <li>Multiple A* grades in Cambridge IGCSE international examinations</li>
-              <li>Highest Gold Award count — Lower Secondary Checkpoint GP (results declared August 2025)</li>
-            </ul>
-          </div>
-          <div class="exp-tags"><span class="exp-tag">🏆 National Top Rank</span><span class="exp-tag">A* Results</span><span class="exp-tag">Gold Awards</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">May 2020 – Present</div>
-          <div class="exp-org">Freelance Teaching · Online & In-Person, Tamil Nadu</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Independent Educator — Biology / Global Perspectives / Literacy & Mathematics</div>
-          <div class="exp-desc">Personalised CAIE and CBSE instruction for 15+ learners per cycle across IGCSE, AS & A Level, and foundational subjects.</div>
-          <ul class="exp-bullets">
-            <li>Personalised instruction across CAIE and CBSE for 15+ learners per cycle</li>
-            <li>Mentored learners in IGCSE and AS/A Level research projects and extended essays</li>
-            <li>Developed customised materials and competency-aligned instructional plans</li>
-            <li>Facilitated blended learning environments — online and in-person</li>
-          </ul>
-          <div class="exp-tags"><span class="exp-tag blue">IGCSE · AS/A Level · CBSE</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Apr 2023 – Jul 2025</div>
-          <div class="exp-org">PlanetSpark · Remote</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Public Speaking & Communication Skills Facilitator</div>
-          <div class="exp-desc">Structured communication and public speaking sessions building student confidence, oratory, and creative expression for 5+ learners per batch.</div>
-          <div class="exp-tags"><span class="exp-tag blue">EdTech · Remote</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Aug 2023 – Nov 2023</div>
-          <div class="exp-org">Bversity | Naan Mudhalvan Scheme · Government of Tamil Nadu</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">PCR Technology Course Mentor</div>
-          <div class="exp-desc">Conducted PCR training sessions for 300+ final-year allied health science graduates. Delivered practical laboratory instruction and guided biotechnology applications including bio-hackathons.</div>
-          <div class="exp-impact">
-            <div class="exp-impact-title">Beneficiaries</div>
-            <ul class="exp-impact">
-              <li>300+ final-year allied health science graduates trained across Tamil Nadu</li>
-              <li>State government-sponsored skilling initiative — Naan Mudhalvan Scheme</li>
-            </ul>
-          </div>
-          <div class="exp-tags"><span class="exp-tag blue">Biotechnology · PCR · State Initiative</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Sep 2021 – Apr 2022</div>
-          <div class="exp-org">Good Shepherd Health Education Centre (GSHEC) · KKS-BMZ, Germany</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Monitoring & Evaluation Officer</div>
-          <div class="exp-desc">Evaluated women's socio-economic and political empowerment initiatives across 15+ programmes. Monitored 1,250+ SHGs through strengthening training, awareness campaigns, networking, and lobbying.</div>
-          <ul class="exp-bullets">
-            <li>Evaluated women's empowerment initiatives across 15+ programmes and 1,250+ SHGs</li>
-            <li>Conducted training and awareness campaigns for SHG livelihood projects</li>
-            <li>Participated in state-level gender budgeting consultations — Tamil Nadu 2022</li>
-            <li>Prepared evaluation reports for national and international stakeholders</li>
-          </ul>
-          <div class="exp-tags"><span class="exp-tag blue">M&E · Gender & Development · Germany Partnership</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">May 2022 – Apr 2023</div>
-          <div class="exp-org">The Aalam International School, Coimbatore, Tamil Nadu</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Facilitator — General Science, English Literacy, Mathematics & Global Studies</div>
-          <div class="exp-desc">Delivered multidisciplinary curriculum to 40+ learners across grades with pastoral care responsibility.</div>
-          <div class="exp-tags"><span class="exp-tag blue">International School · Multidisciplinary</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Jun 2019 – Dec 2019</div>
-          <div class="exp-org">The Hillside PREP, Coimbatore, Tamil Nadu</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Homeroom Facilitator — Primary Science</div>
-          <div class="exp-desc">Facilitated science and homeroom sessions for 15+ primary learners using inquiry-based approaches. Managed classroom engagement and supported academic and personal development.</div>
-          <div class="exp-tags"><span class="exp-tag blue">Primary Education · Inquiry-Based Learning</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Apr 2018 – Mar 2019</div>
-          <div class="exp-org">Shemford Senior Secondary School (CBSE), Vaniyambadi, Tamil Nadu</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">PGT — Biology (CBSE)</div>
-          <div class="exp-desc">Delivered Biology instruction for Grades 6–12 to 500+ learners. Applied activity-based strategies and produced a successful CBSE Board batch in 2019.</div>
-          <div class="exp-impact">
-            <div class="exp-impact-title">Beneficiaries</div>
-            <ul class="exp-impact">
-              <li>500+ learners across Grades 6–12 CBSE Biology</li>
-              <li>Successful CBSE Board batch 2019 — Class 10 and 12</li>
-            </ul>
-          </div>
-          <div class="exp-tags"><span class="exp-tag blue">CBSE · Biology · Grades 6–12</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Dec 2021 – Present</div>
-          <div class="exp-org">IWPG · Global Region 3 · South Busan (Volunteer)</div>
-        </div>
-        <div class="exp-dot gold"></div>
-        <div class="exp-right">
-          <div class="exp-title">Certified Peace Instructor — International Peace Education</div>
-          <div class="exp-desc">Facilitating global peace education sessions for 40+ professionals across South Asia, Africa, and South Korea. Contributor to Geneva Peace Week and international dialogues for war cessation.</div>
-          <div class="exp-impact">
-            <div class="exp-impact-title">Beneficiaries</div>
-            <ul class="exp-impact">
-              <li>40+ women in service, ministry, and education sectors trained as peace educators</li>
-              <li>Participants from South Asia, Africa, and South Korea</li>
-              <li>Geneva Peace Week contributor — international peace dialogues</li>
-            </ul>
-          </div>
-          <div class="exp-tags"><span class="exp-tag">🕊️ Peace Education · International</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-left">
-          <div class="exp-date">Feb 2016 – Jul 2016</div>
-          <div class="exp-org">VWR International · Coimbatore · Full-time</div>
-        </div>
-        <div class="exp-dot"></div>
-        <div class="exp-right">
-          <div class="exp-title">Global Clinical Trial Coordinator</div>
-          <div class="exp-desc">Coordinated global clinical trial documentation and logistics using SAP transactions. Supported cross-functional research teams in trial management and regulatory compliance.</div>
-          <div class="exp-tags"><span class="exp-tag blue">Clinical Research · SAP · Compliance</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-<section id="expertise" style="background:#ffffff !important;">
-  <div class="section-inner">
-    <div class="section-label">What I Do</div>
-    <h2 class="section-title">Areas of Expertise</h2>
-    <div class="section-rule"></div>
-    <div class="cards-grid">
-      <div class="card"><div class="card-icon">📐</div><div class="card-title">IGCSE Global Perspectives (0457)</div><div class="card-desc">Full curriculum delivery, internal moderation, coursework guidance, and outcome management across Written, Individual Report, and Team Project components. 120+ learners per cycle.</div></div>
-      <div class="card"><div class="card-icon">🎓</div><div class="card-title">AS & A Level Global Perspectives (9239)</div><div class="card-desc">CAIE Approved Examiner. Expert in Written, Essay, Group Project, and Research Report components. Marking, standardisation, and extended essay mentorship.</div></div>
-      <div class="card"><div class="card-icon">🔬</div><div class="card-title">Biology & Biotechnology</div><div class="card-desc">CAIE and CBSE Biology instruction for Grades 6–12 (500+ learners). Published cardiovascular disease research. PCR training for 300+ health science graduates.</div></div>
-      <div class="card"><div class="card-icon">🧭</div><div class="card-title">Academic Leadership & Coordination</div><div class="card-desc">Curriculum framework design, teacher training and succession planning, CAIE moderation, stakeholder engagement, and academic outcome management.</div></div>
-      <div class="card"><div class="card-icon">🌍</div><div class="card-title">Peace & Sustainability Education</div><div class="card-desc">Certified Peace Instructor (IWPG). 40+ educators trained globally. Climate literacy, SDG integration, gender equity advocacy, and global citizenship programme design.</div></div>
-      <div class="card"><div class="card-icon">📊</div><div class="card-title">Monitoring & Evaluation</div><div class="card-desc">M&E framework design, impact assessment, and policy reporting. Evaluated 15+ women's empowerment programmes across 1,250+ SHGs in partnership with KKS-BMZ Germany.</div></div>
-      <div class="card"><div class="card-icon">✍️</div><div class="card-title">Research & Academic Writing</div><div class="card-desc">Peer-reviewed publication (IJLS 2018), extended essay guidance, science communication, and educational journalism. 14 articles in Times NIE and The TIPSIAN Weekly.</div></div>
-      <div class="card"><div class="card-icon">🌱</div><div class="card-title">Sustainability Course Development</div><div class="card-desc">Developer of Rolling Through the Odds — a 6-module, SDG-aligned sustainability education course for corporates and platforms. MoU partnership discussions underway.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section>
-  <div class="section-inner">
-    <div class="section-label">Research & Writing</div>
-    <h2 class="section-title">Publications</h2>
-    <div class="section-rule"></div>
-    <div class="pub-item"><div class="pub-type">Peer-Reviewed Journal Article</div><div class="pub-title">Molecular assessment of Coronary Heart Disease (CHD) risk in obese and overweight subjects</div><div class="pub-meta">Jomy TJ & Lakshman Kumar B · International Journal of Life Sciences, Special Issue, A11: 41–48 · 2018</div></div>
-    <div class="pub-item"><div class="pub-type">Educational Article · Times NIE</div><div class="pub-title"><a href="https://www.linkedin.com/posts/jomy-t-j-bb360168_womeninleadership-genderequality-timesnie-activity-7303629751221460992-OaHK" target="_blank">Breaking barriers: Women in leadership and the AI gender gap</a></div><div class="pub-meta">Times NIE · February 2025</div></div>
-    <div class="pub-item"><div class="pub-type">Educational Article · Times NIE</div><div class="pub-title"><a href="https://www.linkedin.com/posts/jomy-t-j-bb360168_published-on-november-11-2024-times-activity-7293942318531760128-_v7y" target="_blank">Standing together against bullying: Creating a safe learning environment</a></div><div class="pub-meta">Times NIE · November 2024</div></div>
-    <div class="pub-item"><div class="pub-type">Educational Article · The TIPSIAN Weekly</div><div class="pub-title"><a href="https://www.linkedin.com/posts/jomy-t-j-bb360168_forceddisplacement-humanrights-publishedarticle-activity-7300095715580465153-Pwe3" target="_blank">Forced displacements and climate change impacts</a></div><div class="pub-meta">The TIPSIAN Weekly · February 2025</div></div>
-    <div class="pub-item"><div class="pub-type">Educational Article · Times NIE</div><div class="pub-title">Cultural custodians: Young minds on a mission</div><div class="pub-meta">Times NIE · March 2025</div></div>
-    <p style="font-size:.84rem;color:#7a7a9a;margin-top:20px;">+ 10 additional articles published in Times NIE and The TIPSIAN Weekly (2024–2025) on education, gender equity, climate change, forced displacement, and global citizenship.</p>
-  </div>
-</section>
-
-<!-- WRITING -->
-<section id="writing" style="background:#ffffff !important;">
-  <div class="section-inner">
-    <div class="section-label">Thought Leadership</div>
-    <h2 class="section-title">Articles, Posts & Perspectives</h2>
-    <div class="section-rule"></div>
-    <p style="color:#4a4a6a;font-size:.92rem;margin-bottom:28px;line-height:1.8;">Published across LinkedIn Pulse, Times NIE, and The TIPSIAN Weekly — covering Cambridge education, ESG & sustainability, geopolitics, peace education, gender equity, and global citizenship.</p>
-
-    <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;color:#1a1a2e;margin-bottom:6px;">LinkedIn Articles</h3>
-    <div style="width:36px;height:2px;background:#b8860b;margin-bottom:20px;border-radius:2px;"></div>
-
-    <div style="margin-bottom:10px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#003b5c;">Peace & Security Education</div>
-    <div class="writing-grid" style="margin-bottom:24px;">
-      <a class="writing-card" href="https://www.linkedin.com/pulse/teaching-peace-security-classroom-jomy-t-j-bcnec" target="_blank"><div class="writing-tag">Peace Education</div><div class="writing-title">Teaching Peace & Security in the Classroom</div><div class="writing-meta">LinkedIn Pulse · Jomy T J</div></a>
-    </div>
-
-    <div style="margin-bottom:10px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#003b5c;">Geopolitics & Governance — Tamil Nadu 2026 Series</div>
-    <div class="writing-grid" style="margin-bottom:24px;">
-      <a class="writing-card" href="https://www.linkedin.com/pulse/tamil-nadu-2026-personal-perspective-future-state-governance-jomy-t-j-tdfic" target="_blank"><div class="writing-tag">Geopolitics</div><div class="writing-title">Tamil Nadu 2026: A Personal Perspective on the Future of State Governance</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/welfare-populism-how-tamil-nadus-freebie-debate-reflects-jomy-t-j-lwaec" target="_blank"><div class="writing-tag">Policy</div><div class="writing-title">Welfare Populism: How Tamil Nadu's Freebie Debate Reflects Global Tensions</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/pink-ballot-how-tamil-nadu-2026-reflects-global-womenvoter-jomy-t-j-te6wc" target="_blank"><div class="writing-tag">Gender & Politics</div><div class="writing-title">The Pink Ballot: How Tamil Nadu 2026 Reflects the Global Women Voter</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/ai-campaigns-global-digitaldemocracy-experiment-jomy-t-j-at2zc" target="_blank"><div class="writing-tag">Digital Democracy</div><div class="writing-title">AI Campaigns & the Global Digital Democracy Experiment</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/tamil-nadu-2026-hung-verdict-clear-message-jomy-t-j-plgac" target="_blank"><div class="writing-tag">Governance</div><div class="writing-title">Tamil Nadu 2026: A Hung Verdict with a Clear Message</div><div class="writing-meta">LinkedIn Pulse</div></a>
-    </div>
-
-    <div style="margin-bottom:10px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#003b5c;">ESG & Sustainability</div>
-    <div class="writing-grid" style="margin-bottom:24px;">
-      <a class="writing-card" href="https://www.linkedin.com/pulse/energy-resilience-just-engineering-jomy-t-j-vtisc" target="_blank"><div class="writing-tag">Energy</div><div class="writing-title">Energy Resilience: It's Just Engineering</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/lets-have-carbon-talk-jomy-t-j-hgetc" target="_blank"><div class="writing-tag">Climate</div><div class="writing-title">Let's Have a Carbon Talk</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/invisible-backbone-dsm-jomy-t-j-b5jqc" target="_blank"><div class="writing-tag">Energy Systems</div><div class="writing-title">The Invisible Backbone: DSM</div><div class="writing-meta">LinkedIn Pulse</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/pulse/from-hype-impact-every-unit-counts-jomy-t-j-xtyoc" target="_blank"><div class="writing-tag">Impact</div><div class="writing-title">From Hype to Impact: Every Unit Counts</div><div class="writing-meta">LinkedIn Pulse</div></a>
-    </div>
-
-    <div style="margin-bottom:10px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#003b5c;">Education & Science</div>
-    <div class="writing-grid" style="margin-bottom:32px;">
-      <a class="writing-card" href="https://www.linkedin.com/pulse/when-science-breakthroughs-student-voices-meet-finding-jomy-t-j-y4stc" target="_blank"><div class="writing-tag">Education & Science</div><div class="writing-title">When Science Breakthroughs & Student Voices Meet: Finding the Balance</div><div class="writing-meta">LinkedIn Pulse</div></a>
-    </div>
-
-    <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;color:#1a1a2e;margin-bottom:6px;">Featured Posts</h3>
-    <div style="width:36px;height:2px;background:#b8860b;margin-bottom:20px;border-radius:2px;"></div>
-    <div class="writing-grid" style="margin-bottom:28px;">
-      <a class="writing-card" href="https://www.linkedin.com/posts/jomy-t-j-bb360168_globalperspectives-checkpointresults-cambridgelearners-activity-7341440611457122306-brfc" target="_blank"><div class="writing-tag">🏆 Cambridge Outcomes</div><div class="writing-title">National Top Rank & Gold Awards — Student & Parent Testimonials</div><div class="writing-meta">Documented outcomes with appreciation</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/posts/jomy-t-j-bb360168_climateaction-sustainabilityleadership-climatecorps2025-activity-7383504603067293696-pG2S" target="_blank"><div class="writing-tag">🌱 Climate Action</div><div class="writing-title">Climate Action & Sustainability Leadership — Climate Corps 2025</div><div class="writing-meta">LinkedIn · EDF Climate Corps</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/posts/jomy-t-j-bb360168_peaceeducation-iwpg-peacebuilding-activity-7367591008924000256-Z_lv" target="_blank"><div class="writing-tag">🕊️ Peace Education</div><div class="writing-title">Peace Education & IWPG Peacebuilding</div><div class="writing-meta">LinkedIn · IWPG</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/posts/jomy-t-j-bb360168_genevapeaceweek-gpw24-activity-7253047990821535745-MQdi" target="_blank"><div class="writing-tag">🌍 Geneva Peace Week</div><div class="writing-title">Geneva Peace Week 2024 — International Dialogues</div><div class="writing-meta">LinkedIn · IWPG Global</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/posts/jomy-t-j-bb360168_education-teaching-learning-share-7387120040661360640-wmXx" target="_blank"><div class="writing-tag">⭐ Featured</div><div class="writing-title">Education, Teaching & Learning — Perspectives</div><div class="writing-meta">LinkedIn · Featured Post</div></a>
-      <a class="writing-card" href="https://www.linkedin.com/posts/jomy-t-j-bb360168_womeninleadership-educationstory-breakingbarriers-share-7388921649208688640-8RP7" target="_blank"><div class="writing-tag">⭐ Featured</div><div class="writing-title">Women in Leadership — Education Story: Breaking Barriers</div><div class="writing-meta">LinkedIn · Featured Post</div></a>
-    </div>
-
-    <div style="text-align:center;">
-      <a href="https://www.linkedin.com/in/jomy-t-j-bb360168/" target="_blank" class="btn btn-primary" style="color:#1a1a2e !important;">View All Posts on LinkedIn →</a>
-    </div>
-  </div>
-</section>
-
-<!-- RESOURCES -->
-<section id="resources">
-  <div class="section-inner">
-    <div class="section-label">For Students & Teachers</div>
-    <h2 class="section-title">Free Study Resources</h2>
-    <div class="section-rule"></div>
-    <div class="resources-grid">
-      <div class="resource-card"><div class="resource-level">IGCSE · 0457</div><div class="resource-title">Global Perspectives Sample Guide</div><div class="resource-desc">Component codes, weightings, exam structure, and what examiners look for across Written, Individual Report, and Team Project.</div><a class="btn-sm" href="0457_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a></div>
-      <div class="resource-card"><div class="resource-level">AS Level · 9239</div><div class="resource-title">Global Perspectives Sample Guide</div><div class="resource-desc">Component codes, weightings, structure breakdowns, and examiner expectations for AS Level Written, Essay, and Group Project.</div><a class="btn-sm" href="AS_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a></div>
-      <div class="resource-card"><div class="resource-level">A Level · 9239</div><div class="resource-title">Global Perspectives Sample Guide</div><div class="resource-desc">Full A Level component breakdown — Written, Essay, Research Report structure, and what CAIE examiners expect at distinction level.</div><a class="btn-sm" href="A_Level_9239_Sample_Guide_TJ_2026-27.doc.pdf" target="_blank">Download Free PDF</a></div>
-    </div>
-    <div style="margin-top:52px;">
-      <div class="section-label">Premium Support</div>
-      <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;margin-bottom:8px;color:#1a1a2e;">Custom Packs & Personalised Guidance</h3>
-      <div class="section-rule"></div>
-      <div class="pack-box">
-        <div class="pack-title">What You Get in a Custom Pack</div>
-        <ul class="pack-list">
-          <li>Component-focused deep-dive PDF (15–35 pages)</li>
-          <li>Personalised To-Do List (3–10 bullets) for your topic</li>
-          <li>Tailored for your exact level, component & topic</li>
-          <li>Examiner-perspective feedback on approach</li>
-          <li>Available for 0457 and 9239 all components</li>
-        </ul>
-        <div style="margin-bottom:20px;">
-          <p style="font-weight:600;margin-bottom:10px;font-size:.9rem;color:#1a1a2e;">How it works:</p>
-          <div class="step-row"><div class="step-num">1</div><span>Contact me via WhatsApp or email with your level, component & topic</span></div>
-          <div class="step-row"><div class="step-num">2</div><span>Confirm details and receive payment instructions (UPI / Google Pay)</span></div>
-          <div class="step-row"><div class="step-num">3</div><span>Receive your personalised custom pack & checklist</span></div>
-        </div>
-        <a class="btn btn-primary" href="https://wa.me/919629427522" target="_blank" style="width:100%;text-align:center;display:block;color:#1a1a2e !important;">Request a Custom Pack on WhatsApp</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ROLLING THROUGH THE ODDS -->
-<section style="background:#1a1a2e !important;">
-  <div class="section-inner">
-    <div class="section-label" style="color:#b8860b !important;">Open Curriculum Project</div>
-    <h2 class="section-title" style="color:#ffffff !important;">Rolling Through the Odds</h2>
-    <div class="section-rule"></div>
-    <p style="color:rgba(255,255,255,.75);font-size:.95rem;margin-bottom:12px;line-height:1.8;">A 6-module, SDG-aligned sustainability education pilot course designed for corporate clients, sustainability platforms, and diverse learners. Developed and version-controlled on GitHub — open for collaboration, review, and partnership.</p>
-    <p style="color:rgba(255,255,255,.6);font-size:.85rem;margin-bottom:8px;"><strong style="color:#f5e9c8;">SDGs Covered:</strong> SDG 4 (Quality Education) · SDG 7 (Clean Energy) · SDG 10 (Reduced Inequalities) · SDG 11 (Sustainable Cities) · SDG 12 (Responsible Consumption) · SDG 13 (Climate Action)</p>
-    <p style="color:rgba(255,255,255,.6);font-size:.85rem;margin-bottom:28px;"><strong style="color:#f5e9c8;">Status:</strong> Pilot phase · Content in active development · MoU partnership discussions ongoing</p>
-    <div class="module-grid">
-      <div class="module-card"><div class="module-num">Module 01</div><div class="module-title">Foundations of Sustainability for Corporates</div><div class="module-sdg">SDG 4 · SDG 12</div></div>
-      <div class="module-card"><div class="module-num">Module 02</div><div class="module-title">Global Trends & Data for Corporates</div><div class="module-sdg">SDG 7 · SDG 13</div></div>
-      <div class="module-card"><div class="module-num">Module 03</div><div class="module-title">Critical Reading & Research Analysis</div><div class="module-sdg">SDG 4</div></div>
-      <div class="module-card"><div class="module-num">Module 04</div><div class="module-title">Case Studies & Varied Perspectives</div><div class="module-sdg">SDG 10 · SDG 11</div></div>
-      <div class="module-card"><div class="module-num">Module 05</div><div class="module-title">Action Plans & Futuristic Implementations</div><div class="module-sdg">SDG 11 · SDG 12</div></div>
-      <div class="module-card"><div class="module-num">Module 06</div><div class="module-title">Monitoring, Evaluation & Reflection</div><div class="module-sdg">SDG 4 · SDG 13</div></div>
-    </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="https://github.com/Jomy-T-J/Rolling-through-the-odds" target="_blank" class="btn btn-primary" style="color:#1a1a2e !important;">View Course on GitHub</a>
-      <a href="https://wa.me/919629427522" target="_blank" class="btn btn-outline">Collaborate With Me</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="section-label">Get in Touch</div>
-    <h2 class="section-title">Contact & Availability</h2>
-    <div class="section-rule"></div>
-    <div class="contact-grid">
-      <div>
-        <div class="contact-method"><div class="contact-icon">💬</div><div><div class="contact-label">WhatsApp</div><div class="contact-value"><a href="https://wa.me/919629427522" target="_blank">+91 96294 27522</a></div></div></div>
-        <div class="contact-method"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:starjomy@gmail.com">starjomy@gmail.com</a></div></div></div>
-        <div class="contact-method"><div class="contact-icon">💼</div><div><div class="contact-label">LinkedIn</div><div class="contact-value"><a href="https://www.linkedin.com/in/jomy-t-j-bb360168/" target="_blank">linkedin.com/in/jomy-t-j-bb360168</a></div></div></div>
-        <div class="contact-method"><div class="contact-icon">🌐</div><div><div class="contact-label">Portfolio</div><div class="contact-value"><a href="https://jomy-t-j.github.io" target="_blank">jomy-t-j.github.io</a></div></div></div>
-        <div class="contact-method"><div class="contact-icon">📍</div><div><div class="contact-label">Location</div><div class="contact-value">Coimbatore, Tamil Nadu, India · Available to relocate internationally</div></div></div>
-      </div>
-      <div>
-        <div class="availability">
-          <div class="avail-title">📞 WhatsApp Call Availability (IST)</div>
-          <div class="avail-row"><span class="avail-day">Mon – Fri (Evening)</span><span>7:00 – 8:00 PM</span></div>
-          <div class="avail-row"><span class="avail-day">Weekends</span><span>6:00 – 7:00 PM</span></div>
-          <p style="font-size:.78rem;color:#7a7a9a;margin-top:12px;">If unavailable, please leave a WhatsApp message — I will respond when free.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  <div class="footer-links">
-    <a href="https://www.linkedin.com/in/jomy-t-j-bb360168/" target="_blank">LinkedIn</a>
-    <a href="https://wa.me/919629427522" target="_blank">WhatsApp</a>
-    <a href="mailto:starjomy@gmail.com">Email</a>
-    <a href="https://github.com/Jomy-T-J/Rolling-through-the-odds" target="_blank">Rolling Through the Odds</a>
-    <a href="#resources">Resources</a>
-  </div>
-  <p>© 2025–2026 Jomy T J · Coimbatore, Tamil Nadu, India · Available for international relocation</p>
-  <p style="margin-top:8px;font-size:.72rem;">These materials are independent educator resources and are not official Cambridge publications. Cambridge® is a registered trademark of Cambridge Assessment International Education.</p>
+  <span>Cambridge Global Perspectives &amp; Research &middot; Biology &middot; Sustainability Education</span>
+  <span>&copy; 2025&ndash;2026 Jomy T J &middot; <a href="https://www.linkedin.com/in/jomy-t-j-bb360168/">LinkedIn</a> &middot; <a href="https://wa.me/919629427522">WhatsApp</a></span>
 </footer>
-
 </body>
 </html>
